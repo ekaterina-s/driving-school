@@ -1,0 +1,114 @@
+.top-panel {
+  background: $header-grey-bg;
+
+  @include media($mobile) {
+    background: $header-white-bg;
+  }
+}
+
+.top-panel__container {
+  display: flex;
+  align-items: center;
+}
+
+.top-panel__link {
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  margin-right: 106px;
+
+  @include media($mobile) {
+    margin-right: 83px;
+  }
+}
+
+.top-panel__logo {
+  @include media($mobile) {
+    width: 45px;
+    height: 43px;
+  }
+}
+
+.top-panel__name {
+  color: $header-black;
+  @include font(20px, 26px, $basic-family, 600);
+
+  @include media($mobile) {
+    @include font(18px, 23px, $basic-family, 600);
+  }
+}
+
+.top-panel__address-choice {
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  @include font(16px, 19px, $basic-family);
+  color: $header-grey;
+  position: relative;
+  margin-right: 109px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/location.svg) no-repeat 0 0;
+    top: 0;
+    left: -24px;
+    width: 14px;
+    height: 20px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/drop-down.svg) no-repeat 0 0;
+    top: 6px;
+    right: -19px;
+    width: 12px;
+    height: 8px;
+  }
+
+  @include media($mobile) {
+    order: 7;
+  }
+}
+
+.top-panel__drop-down {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 71px;
+  left: 356px;
+  right: 0;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 10px;
+
+  max-width: 225px;
+  z-index: 2;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: $drop-down-bg;
+}
+
+.js-drop-down {
+  display: none;
+}
+
+.top-panel__address-option {
+  display: block;
+  text-decoration: none;
+  @include font(16px, 19px, $basic-family);
+  color: $header-grey;
+  padding-bottom: 10px;
+
+  &:hover {
+    color: $link-hover;
+    @include font(16px, 21px, $basic-family, bold);
+  }
+}

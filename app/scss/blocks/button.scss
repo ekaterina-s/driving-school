@@ -1,0 +1,13 @@
+.button {
+  display: inline-block;
+  @include font(16px, 19px, $basic-family, bold);
+  vertical-align: top;
+  border: 0;
+  padding: 15px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: $white-button;
+  background: $button-bg;
+}

@@ -1,5 +1,18 @@
 //bacgrounds
-$body-bg: #ff55;
-
+$header-grey-bg: #f1f1f1;
+$header-white-bg: #fff;
+$header-black: #101010;
+$header-grey: #373737;
+$header-toggle-line: #2B8E53;
+$white-button: #fff;
+$button-bg: #FF574D;
+$link-hover: #2B8E53;
+$drop-down-bg: #fff;
 //fonts
-$basic-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+$basic-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+$second-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
+
+//break-points
+$mobile: 320px;
+$tablet: 992px;
+$desktop: 1440px;

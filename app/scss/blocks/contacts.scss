@@ -1,0 +1,53 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  @include media ($mobile) {
+    display: none;
+  }
+}
+
+.contacts__email {
+  @include font(16px, 19px, $basic-family, bold);
+  color: $header-black;
+  text-decoration: none;
+  position: relative;
+  margin-right: 70px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/mail.svg) no-repeat 0 0;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.contacts__phones {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  margin-right: 74px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    background: url(../img/phone.svg) no-repeat 0 0;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.contacts__phone {
+  @include font(16px, 19px, $basic-family, bold);
+  color: $header-black;
+  text-decoration: none;
+}
+
+.contacts__callback {}

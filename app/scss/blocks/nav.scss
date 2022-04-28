@@ -1,0 +1,29 @@
+.nav {
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+
+  @include media($mobile) {
+    display: none;
+  }
+}
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 78px;
+}
+
+.nav__link {
+  @include font(16px, 19px, $basic-family);
+  color: $header-black;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-hover;
+    @include font(16px, 19px, $basic-family, bold);
+  }
+}

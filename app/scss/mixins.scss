@@ -1,0 +1,9 @@
+@mixin font($fs, $lh, $ff: $basic-family, $fw: null) {
+  font: $fw #{$fs}/#{$lh} $ff;
+}
+
+@mixin media($point) {
+  @media (max-width: $point) {
+    @content;
+  }
+}
