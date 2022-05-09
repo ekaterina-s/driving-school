@@ -1,19 +1,29 @@
-.header {}
+.header {
+  position: relative;
+
+  padding-bottom: 70px;
+}
 
 .header__top-panel {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @include media ($mobile) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .header__toggle {
   display: none;
-  width: 25px;
+  width: 26px;
   height: 13px;
   background-color: $header-white-bg;
   cursor: pointer;
   border: 0;
   z-index: 4;
   position: relative;
+  margin-left: auto;
 
 
   @include media($mobile) {
@@ -24,43 +34,116 @@
   }
 }
 
-.header__toggle-line{
+.header__toggle-line {
   height: 2px;
   background-color: $header-toggle-line;
   position: absolute;
-  top: 50%;
+  top: 5px;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
   transition: background-color .2s ease;
-  &:after, &:before{
-    content: ' ';
+
+  &:after,
+  &:before {
+    content: '';
     position: absolute;
     inset: 0;
-    background-color:  $header-toggle-line;;
+    background-color: $header-toggle-line;
     transition: transform .2s ease;
   }
-  &:before{
-    transform: translateY(-4px);
+
+  &:before {
+    transform: translateY(-6px);
   }
-  &:after{
-    transform: translateY(4px);
+
+  &:after {
+    // width: 16px;
+    transform: translateY(6px);
   }
 }
 
-.header__toggle._active{
-  .header__toggle-line{
+.header__toggle._active {
+  .header__toggle-line {
     background-color: transparent;
   }
-  .header__toggle-line:before{
+
+  .header__toggle-line:before {
     transform: translateY(0) rotate(45deg);
   }
-  .header__toggle-line:after{
+
+  .header__toggle-line:after {
+    width: 26px;
     transform: translateY(0) rotate(-45deg);
   }
 }
 
+
+// .header{
+//   padding-bottom: 70px;
+// }
+
 .header__nav {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @include media ($mobile) {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
+.header__overlay {
+
+  @include media($mobile) {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: grid;
+    padding-top: 106px;
+  }
+
+  // .contacts{
+  //   display: block;
+  //   order: 1;
+  // }
+
+  // .header__nav{
+  //   position: static;
+  //   background-color: transparent;
+  //   box-shadow: none;
+  //   padding: 0;
+  // }
+
+  // .nav__list{
+  //   flex-wrap: wrap;
+  //   gap: 0;
+  // }
+
+  // .nav__item{
+  //   width: 50%;
+  // }
+}
+
+.header__callback {
+  margin-left: auto;
+
+  @include media ($mobile) {
+    width: 45px;
+    height: 45px;
+    background: url(../img/phone-callback.svg) no-repeat center;
+    background-color: #2B8E53;
+    border-radius: 10px;
+    font-size: 0;
+    padding: 0;
+    z-index: 1;
+  }
 }

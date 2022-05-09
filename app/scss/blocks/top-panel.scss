@@ -9,6 +9,11 @@
 .top-panel__container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+
+  @include media($mobile) {
+    row-gap: 38px;
+  }
 }
 
 .top-panel__link {
@@ -16,10 +21,12 @@
   display: flex;
   gap: 30px;
   text-align: left;
-  margin-right: 106px;
+  margin-right: 81px;
 
   @include media($mobile) {
-    margin-right: 83px;
+    margin-right: 0;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -40,29 +47,25 @@
 }
 
 .top-panel__address-choice {
-  display: inline-block;
+  display: flex;
+  gap: 10px;
+  align-items: center;
   vertical-align: top;
   border: 0;
   text-decoration: none;
   cursor: pointer;
   @include font(16px, 19px, $basic-family);
   color: $header-grey;
-  position: relative;
-  margin-right: 109px;
+  margin-right: 58px;
 
   &::before {
-    position: absolute;
     content: '';
-    display: block;
     background: url(../img/location.svg) no-repeat 0 0;
-    top: 0;
-    left: -24px;
     width: 14px;
     height: 20px;
   }
 
   &::after {
-    position: absolute;
     content: '';
     display: block;
     background: url(../img/drop-down.svg) no-repeat 0 0;
@@ -73,7 +76,7 @@
   }
 
   @include media($mobile) {
-    order: 7;
+    z-index: 1;
   }
 }
 

@@ -1,8 +1,28 @@
 .nav {
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
-
   @include media($mobile) {
-    display: none;
+    transform: translateY(-100%);
+    background-color: $header-white-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &._active {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+      background-color: $header-white-bg;
+    }
+
   }
 }
 
@@ -12,7 +32,22 @@
   list-style-type: none;
   display: flex;
   gap: 78px;
+
+  @include media ($mobile) {
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-top: 40px;
+  }
 }
+
+// .nav__item {
+
+//   @include media ($mobile) {
+//     width: 50%;
+//   }
+// }
 
 .nav__link {
   @include font(16px, 19px, $basic-family);
@@ -21,9 +56,34 @@
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transition: color .2s ease;
+  user-select: none;
+
+  &:before {
+    content: attr(title);
+    position: absolute;
+    inset: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: $link-hover;
+    opacity: 0;
+    transition: opacity .2s ease;
+    pointer-events: none;
+  }
 
   &:hover {
-    color: $link-hover;
-    @include font(16px, 19px, $basic-family, bold);
+    color: transparent;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+
+  @include media ($mobile) {
+    @include font(16px, 21px, $basic-family);
   }
 }

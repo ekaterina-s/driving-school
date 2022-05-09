@@ -1,53 +1,75 @@
 .contacts {
   display: flex;
   align-items: center;
+  gap: 40px;
 
   @include media ($mobile) {
-    display: none;
+    flex-direction: column-reverse;
+    gap: 0;
+    order: 1;
+    align-items: flex-start;
   }
 }
 
-.contacts__email {
+.contacts__container {
+  @include media ($mobile) {
+    margin: 0;
+  }
+}
+
+.contacts__text {
   @include font(16px, 19px, $basic-family, bold);
   color: $header-black;
   text-decoration: none;
-  position: relative;
-  margin-right: 70px;
+}
 
+.contacts__text--email {
+  display: flex;
+  gap: 10px;
   &::before {
-    position: absolute;
     content: '';
     display: block;
     background: url(../img/mail.svg) no-repeat 0 0;
-    top: 0;
-    left: -30px;
     width: 20px;
     height: 20px;
+
+    @include media ($mobile) {
+      background: url(../../img/email-mobile.svg) no-repeat 0 0;
+    }
   }
 }
 
 .contacts__phones {
   display: flex;
   gap: 10px;
-  position: relative;
-  margin-right: 74px;
 
-  &::before {
-    position: absolute;
-    content: '';
+  @include media ($mobile) {
     display: block;
-    background: url(../img/phone.svg) no-repeat 0 0;
-    top: 0;
-    left: -30px;
-    width: 20px;
-    height: 20px;
+    gap: 0;
+    margin-right: 0;
+    margin-bottom: 21px;
   }
 }
 
-.contacts__phone {
-  @include font(16px, 19px, $basic-family, bold);
-  color: $header-black;
-  text-decoration: none;
+.contacts__text--phone-first {
+  display: flex;
+  gap: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    background: url(../img/phone.svg) no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+
+    @include media ($mobile) {
+      background: url(../img/phone-mobile.svg) no-repeat 0 0;
+    }
+  }
 }
 
-.contacts__callback {}
+.contacts__text--phone-second {
+  @include media ($mobile) {
+    margin-left: 30px;
+  }
+}
