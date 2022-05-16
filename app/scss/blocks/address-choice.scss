@@ -1,0 +1,54 @@
+.address-choice {
+  display: flex;
+  gap: 5px;
+  position: relative;
+}
+
+.address-choice__text {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  vertical-align: top;
+  border: 0;
+  text-decoration: none;
+  @include font(16px, 19px, $basic-family);
+  color: $header-grey;
+
+  &::before {
+    content: '';
+    background: url(../img/location.svg) no-repeat 0 0;
+    width: 14px;
+    height: 20px;
+  }
+}
+
+.address-choice__button {
+  border: 0;
+  cursor: pointer;
+  margin-right: 41px;
+}
+
+.address-choice__svg {
+  width: 10px;
+  height: 5px;
+}
+
+.address-choice__dropdown {
+  // display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  padding-bottom: 10px;
+
+  max-width: 225px;
+  z-index: 2;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: $drop-down-bg;
+}

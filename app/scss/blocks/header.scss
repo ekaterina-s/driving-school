@@ -109,6 +109,13 @@
     background: #fff;
     display: grid;
     padding-top: 106px;
+
+    // &._active {
+    //   transform: translateY(0);
+    //   opacity: 1;
+    //   pointer-events: auto;
+    //   background-color: $header-white-bg;
+    // }
   }
 
   // .contacts{
