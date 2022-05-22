@@ -1,3 +1,18 @@
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  min-width: 225px;
+  z-index: 2;
+  box-shadow: 5px 10px 30px rgba($dropdown-shadow, 0.1);
+  background-color: $dropdown-bg;
+}
+
 .dropdown__list {
   list-style-type: none;
   padding: 0;
@@ -8,13 +23,26 @@
   display: block;
   text-decoration: none;
   @include font(16px, 19px, $basic-family);
-  color: $header-grey;
+  color: $header-secondary-color;
   padding-bottom: 10px;
   cursor: pointer;
+  vertical-align: top;
+  user-select: none;
+  transition: color .2s ease;
+
+  &:before {
+    content: attr(title);
+    font-weight: bold;
+    pointer-events: none;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: block;
+  }
 
   &:hover {
-    color: $link-hover;
-    @include font(16px, 21px, $basic-family, bold);
+    color: $dropdown-link-hover;
+    font-weight: bold;
   }
 }
 

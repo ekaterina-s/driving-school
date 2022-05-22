@@ -1,18 +1,26 @@
 //bacgrounds
-$header-grey-bg: #f1f1f1;
-$header-white-bg: #fff;
-$header-black: #101010;
-$header-grey: #373737;
+$header-primary-bg: #f1f1f1;
+$header-secondary-bg: #fff;
+$header-primary-color: #101010;
+$header-secondary-color: #373737;
+$header-nav-shadow: #000;
 $header-toggle-line: #2B8E53;
-$white-button: #fff;
-$button-bg: #FF574D;
-$link-hover: #2B8E53;
-$drop-down-bg: #fff;
+$top-panel-shadow: #000;
+$button-primary-color: #fff;
+$button-primary-bg: #FF574D;
+$button-primary-bg-hover: #D34137;
+$nav-link-hover: #2B8E53;
+$dropdown-bg: #fff;
+$dropdown-shadow: #000;
+$dropdown-link-hover: #2B8E53;
+$callback-bg:#2B8E53;
 //fonts
 $basic-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
 $second-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
 
 //break-points
-$mobile: 320px;
+$mobile: 640px;
 $tablet: 992px;
-$desktop: 1920px;
+$tablet-large: 1120px;
+$tablet-pro: 1295px;
+$desktop: 1300px;

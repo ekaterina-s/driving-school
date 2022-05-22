@@ -1,8 +1,20 @@
 .top-panel {
-  background: $header-grey-bg;
+  background: $header-primary-bg;
 
-  @include media($mobile) {
-    background: $header-white-bg;
+  @include media($tablet) {
+    background: $header-secondary-bg;
+    box-shadow: 5px 10px 30px rgba($top-panel-shadow, 0.1);
+  }
+}
+
+.top-panel__contacts {
+  margin-right: 30px;
+
+  @include media($tablet) {
+    background: $header-secondary-bg;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0;
   }
 }
 
@@ -12,7 +24,12 @@
   flex-wrap: wrap;
 
   @include media($mobile) {
-    row-gap: 38px;
+    display: grid;
+    grid-template-columns: 182px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    // column-gap: 83px;
+    row-gap: 37px;
+    // grid-template-areas: ;
   }
 }
 
@@ -23,6 +40,10 @@
   text-align: left;
   margin-right: 81px;
 
+  @include media($tablet-pro) {
+    margin-right: 50px;
+  }
+
   @include media($mobile) {
     margin-right: 0;
     position: relative;
@@ -31,87 +52,17 @@
 }
 
 .top-panel__logo {
-  @include media($mobile) {
+  @include media($tablet) {
     width: 45px;
     height: 43px;
   }
 }
 
 .top-panel__name {
-  color: $header-black;
+  color: $header-primary-color;
   @include font(20px, 26px, $basic-family, 600);
 
-  @include media($mobile) {
+  @include media($tablet) {
     @include font(18px, 23px, $basic-family, 600);
   }
 }
-
-// .top-panel__address-choice {
-//   display: flex;
-//   gap: 10px;
-//   align-items: center;
-//   vertical-align: top;
-//   border: 0;
-//   text-decoration: none;
-//   cursor: pointer;
-//   @include font(16px, 19px, $basic-family);
-//   color: $header-grey;
-//   margin-right: 58px;
-
-//   &::before {
-//     content: '';
-//     background: url(../img/location.svg) no-repeat 0 0;
-//     width: 14px;
-//     height: 20px;
-//   }
-
-  // &::after {
-  //   content: '';
-  //   display: block;
-  //   background: url(../img/drop-down.svg) no-repeat 0 0;
-  //   top: 6px;
-  //   right: -19px;
-  //   width: 12px;
-  //   height: 8px;
-  // }
-
-//   @include media($mobile) {
-//     z-index: 1;
-//   }
-// }
-
-// .top-panel__drop-down {
-//   display: none;
-//   list-style-type: none;
-//   margin: 0;
-//   padding: 0;
-//   position: absolute;
-//   top: 71px;
-//   left: 356px;
-//   right: 0;
-//   border-radius: 10px;
-//   padding: 20px;
-//   padding-bottom: 10px;
-
-//   max-width: 225px;
-//   z-index: 2;
-//   box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
-//   background-color: $drop-down-bg;
-// }
-
-// .js-drop-down {
-//   display: none;
-// }
-
-// .top-panel__address-option {
-//   display: block;
-//   text-decoration: none;
-//   @include font(16px, 19px, $basic-family);
-//   color: $header-grey;
-//   padding-bottom: 10px;
-
-//   &:hover {
-//     color: $link-hover;
-//     @include font(16px, 21px, $basic-family, bold);
-//   }
-// }

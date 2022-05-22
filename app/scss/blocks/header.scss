@@ -1,6 +1,5 @@
 .header {
   position: relative;
-
   padding-bottom: 70px;
 }
 
@@ -8,7 +7,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
-  @include media ($mobile) {
+  @include media ($tablet) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -18,19 +17,23 @@
   display: none;
   width: 26px;
   height: 13px;
-  background-color: $header-white-bg;
+  background-color: $header-secondary-bg;
   cursor: pointer;
   border: 0;
   z-index: 4;
   position: relative;
   margin-left: auto;
 
-
-  @include media($mobile) {
+  @include media($tablet) {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background-color: transparent;
+    order: 1;
+  }
+
+  @include media($mobile) {
+    order: 0;
   }
 }
 
@@ -58,7 +61,7 @@
   }
 
   &:after {
-    // width: 16px;
+    width: 16px;
     transform: translateY(6px);
   }
 }
@@ -86,71 +89,56 @@
 .header__nav {
   padding-top: 15px;
   padding-bottom: 15px;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
-  background: #fff;
+  box-shadow: 5px 10px 30px rgba($header-nav-shadow, 0.1);
+  background: $header-secondary-bg;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
 
-  @include media ($mobile) {
+  @include media ($tablet) {
     position: static;
     background-color: transparent;
     box-shadow: none;
     padding: 0;
+    margin-bottom: 40px;
   }
 }
 
 .header__overlay {
 
-  @include media($mobile) {
-    position: fixed;
-    inset: 0;
-    background: #fff;
-    display: grid;
-    padding-top: 106px;
-
-    // &._active {
-    //   transform: translateY(0);
-    //   opacity: 1;
-    //   pointer-events: auto;
-    //   background-color: $header-white-bg;
-    // }
+  @include media($tablet-pro) {
+    flex-grow: 1;
+    display: flex;
   }
 
-  // .contacts{
-  //   display: block;
-  //   order: 1;
-  // }
+  @include media($tablet) {
+    display: block;
+    flex-grow: 0;
+    position: fixed;
+    inset: 0;
+    background: $header-secondary-bg;
+    z-index: 5;
+    transition: transform .2s ease;
+    transform: translateY(100%);
+    margin-top: 136px;
+  }
 
-  // .header__nav{
-  //   position: static;
-  //   background-color: transparent;
-  //   box-shadow: none;
-  //   padding: 0;
-  // }
-
-  // .nav__list{
-  //   flex-wrap: wrap;
-  //   gap: 0;
-  // }
-
-  // .nav__item{
-  //   width: 50%;
-  // }
+  @include media($mobile) {
+    margin-top: 70px;
+  }
 }
 
 .header__callback {
   margin-left: auto;
 
-  @include media ($mobile) {
+  @include media ($tablet-pro) {
     width: 45px;
     height: 45px;
     background: url(../img/phone-callback.svg) no-repeat center;
-    background-color: #2B8E53;
+    background-color: $callback-bg;
     border-radius: 10px;
     font-size: 0;
     padding: 0;
-    z-index: 1;
   }
 }

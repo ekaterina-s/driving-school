@@ -2,6 +2,16 @@
   display: flex;
   gap: 5px;
   position: relative;
+  margin-right: 65px;
+
+  @include media ($tablet) {
+    margin-left: auto;
+  }
+
+  @include media ($mobile) {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .address-choice__text {
@@ -14,7 +24,7 @@
   border: 0;
   text-decoration: none;
   @include font(16px, 19px, $basic-family);
-  color: $header-grey;
+  color: $header-secondary-color;
 
   &::before {
     content: '';
@@ -27,7 +37,6 @@
 .address-choice__button {
   border: 0;
   cursor: pointer;
-  margin-right: 41px;
 }
 
 .address-choice__svg {
@@ -36,19 +45,6 @@
 }
 
 .address-choice__dropdown {
-  // display: none;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
   padding: 20px;
   padding-bottom: 10px;
-
-  max-width: 225px;
-  z-index: 2;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
-  background-color: $drop-down-bg;
 }

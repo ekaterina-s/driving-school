@@ -36,8 +36,9 @@
 
 <body>
   <picture>
-    <source srcset="img/mobile.jpg" media="(min-width: 320px)">
-    <img class="test" src="img/Desktop.jpg" alt="">
+    <source srcset="img/mobile-2.jpg" media="(min-width: 320px)">
+    <!-- <source srcset="img/mobile.jpg" media="(min-width: 320px)"> -->
+    <img hidden class="test" src="img/Desktop.jpg" alt="">
   </picture>
   <header class="header">
     <div class="header__top-panel top-panel">
@@ -66,35 +67,8 @@
             </ul>
           </div>
         </div>
-        <div class="social-networks container">
-          <ul class="social-networks__list">
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link"><svg class="social-networks__icon">
-                  <use xlink:href="#instagram" />
-                </svg></a>
-            </li>
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link"><svg class="social-networks__icon">
-                  <use xlink:href="#vk" />
-                </svg></a>
-            </li>
-            <li class="social-networks__item">
-              <a href="#" class="social-networks__link"><svg class="social-networks__icon">
-                  <use xlink:href="#fb" />
-                </svg></a>
-            </li>
-          </ul>
-        </div>
-        <div class="header__overlay _active">
 
-          <div class="top-panel__contacts contacts container contacts__container">
-            <a href="mailto:info@autoturs-sp" class="contacts__text contacts__text--email">info@autoturs-sp</a>
-            <div class="contacts__phones">
-              <a href="tel:+78129503218" class="contacts__text contacts__text--phone-first">(812) 950–32–18</a>
-              <a href="tel:+78126121122" class="contacts__text contacts__text--phone-second">(812) 612–11–22</a>
-            </div>
-          </div>
-
+        <div class="header__overlay">
           <div class="header__nav">
             <nav class="nav container ">
               <ul class="nav__list">
@@ -125,13 +99,35 @@
               </ul>
             </nav>
           </div>
-
-
-
+          <div class="social-networks">
+            <ul class="social-networks__list">
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link"><svg class="social-networks__icon">
+                    <use xlink:href="#instagram" />
+                  </svg></a>
+              </li>
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link"><svg class="social-networks__icon">
+                    <use xlink:href="#vk" />
+                  </svg></a>
+              </li>
+              <li class="social-networks__item">
+                <a href="#" class="social-networks__link"><svg class="social-networks__icon">
+                    <use xlink:href="#fb" />
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+          <div class="top-panel__contacts contacts">
+            <a href="mailto:info@autoturs-sp" class="contacts__text contacts__text--email">info@autoturs-sp</a>
+            <div class="contacts__phones">
+              <a href="tel:+78129503218" class="contacts__text contacts__text--phone-first">(812) 950–32–18</a>
+              <a href="tel:+78126121122" class="contacts__text contacts__text--phone-second">(812) 612–11–22</a>
+            </div>
+          </div>
         </div>
 
-        <button class="header__callback button" type="button" aria-label="кнопка колбек">Заказать звонок</button>
-
+        <button class="header__callback button button-primary" type="button" aria-label="кнопка колбек">Заказать звонок</button>
 
       </div>
     </div>

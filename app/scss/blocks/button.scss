@@ -2,12 +2,23 @@
   display: inline-block;
   @include font(16px, 19px, $basic-family, bold);
   vertical-align: top;
-  border: 0;
-  padding: 15px 28px;
+  border: 1px solid transparent;
+  padding: 0;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  color: $white-button;
-  background: $button-bg;
+  background-color: transparent;
+  color: inherit;
+  transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+
+.button-primary {
+  color: $button-primary-color;
+  background-color: $button-primary-bg;
+  padding: 15px 28px;
+
+  &:hover {
+    background-color: $button-primary-bg-hover;
+  }
 }
