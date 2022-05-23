@@ -116,10 +116,6 @@
     z-index: 5;
     transition: transform .2s ease;
     transform: translateY(100%);
-    margin-top: 160px;
-  }
-
-  @include media($mobile) {
     margin-top: 70px;
   }
 }
