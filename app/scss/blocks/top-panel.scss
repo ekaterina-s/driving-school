@@ -23,7 +23,7 @@
   align-items: center;
   flex-wrap: wrap;
 
-  @include media($mobile) {
+  @include media($tablet) {
     display: grid;
     grid-template-columns: 182px 1fr;
     grid-template-rows: repeat(2, 1fr);

@@ -29,11 +29,6 @@
     justify-content: center;
     align-items: flex-start;
     background-color: transparent;
-    order: 1;
-  }
-
-  @include media($mobile) {
-    order: 0;
   }
 }
 
@@ -121,7 +116,7 @@
     z-index: 5;
     transition: transform .2s ease;
     transform: translateY(100%);
-    margin-top: 136px;
+    margin-top: 160px;
   }
 
   @include media($mobile) {

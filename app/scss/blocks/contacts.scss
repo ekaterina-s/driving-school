@@ -9,10 +9,6 @@
     flex-direction: column-reverse;
     gap: 0;
     order: 1;
-    align-items: center;
-  }
-
-  @include media ($mobile) {
     align-items: flex-start;
   }
 }

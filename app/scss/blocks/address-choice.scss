@@ -4,11 +4,11 @@
   position: relative;
   margin-right: 65px;
 
-  @include media ($tablet) {
-    margin-left: auto;
-  }
+  // @include media ($tablet) {
+  //   margin-left: auto;
+  // }
 
-  @include media ($mobile) {
+  @include media ($tablet) {
     margin-right: 0;
     margin-left: 0;
   }
