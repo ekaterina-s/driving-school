@@ -1,0 +1,10 @@
+.section-subhead {
+  padding: 0;
+  margin: 0;
+  @include font(30px, 39px, $basic-family, bold);
+  color: $section-subhead-color;
+
+  @include media ($mobile) {
+    @include font(18px, 23px, $basic-family, bold);
+  }
+}

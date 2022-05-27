@@ -1,0 +1,10 @@
+.section-head {
+  padding: 0;
+  margin: 0;
+  @include font(50px, 65px, $basic-family, bold);
+  color: $section-head-color;
+
+  @include media ($tablet-pro) {
+    @include font(25px, 33px, $basic-family, bold);
+  }
+}

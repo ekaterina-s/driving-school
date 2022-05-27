@@ -1,0 +1,6 @@
+.section-description {
+  padding: 0;
+  margin: 0;
+  @include font(16px, 21px, $basic-family);
+  color: $section-description-color;
+}

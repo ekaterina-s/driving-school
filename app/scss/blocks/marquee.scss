@@ -1,0 +1,12 @@
+.marquee {
+  @include font(30px, 36px, $basic-family, bold);
+  color: $marquee-color;
+  text-transform: uppercase;
+  background-color: $marquee-bg;
+  padding: 17px 20px;
+
+  @include media ($mobile) {
+    @include font(20px, 24px, $basic-family, bold);
+    padding: 20px 15px;
+  }
+}
