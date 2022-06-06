@@ -1,146 +1,29 @@
-.offer__top-container {
-  max-width: 1603px;
-  margin: 0 0 0 315px;
-  // position: relative;
-  display: flex;
-  gap: 361px;
-  // margin-bottom: 144px;
-
-  @include media ($tablet-pro) {
-    margin-left: 150px;
-    gap: 150px;
-  }
-
-  @include media ($tablet) {
-    flex-direction: column;
-    gap: 40px;
-    margin-left: 30px;
-  }
-
-  @include media ($mobile) {
-    margin-left: 0;
-  }
-}
-
-.offer__top-wrapper {
-  max-width: 519px;
-
-  @include media ($tablet) {
-    max-width: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-  }
-}
-
 .offer__head {
   padding-top: 55px;
   padding-bottom: 20px;
 
-  @include media ($tablet) {
-    padding-top: 0;
-    text-align: center;
-  }
-
   @include media ($mobile) {
-    text-align: left
+    text-align: left;
+    padding-top: 0;
   }
 }
 
 .offer__description {
   padding-bottom: 20px;
-}
-
-.offer__description--first {
-  @include media ($tablet) {
-    text-align: center;
-  }
 
   @include media ($mobile) {
-    text-align: left;
+    max-width: 250px;
   }
 }
 
-.offer__description--second {
+.offer__bottom {
+  padding-top: 60px;
+  background-color: $section-primary-bg;
+
   @include media ($tablet) {
-    text-align: left;
-  }
-}
-
-.offer__registration-button {
-  padding: 15px 48px;
-}
-
-.offer__green-bg {
-  background-color: $green-bg;
-  border-radius: 10px 0 0 0;
-  // max-width: 725px;
-  // max-height: 460px;
-  // width: 725px;
-  // height: 460px;
-  // position: absolute;
-  // top: 270px;
-  // right: 0;
-  padding-left: 130px;
-  padding-bottom: 21px;
-
-  @include media ($mobile) {
-    margin-left: 15px;
-    padding-left: 30px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
-}
-
-.offer__picture {
-  display: block;
-}
-
-.offer__picture--first {
-  transform: translateX(-157px);
-  margin-top: 92px;
-  max-width: 100%;
-  height: auto;
-
-  @include media ($mobile) {
-    transform: translateX(-30px);
-    margin-top: 40px;
-  }
-}
-
-.offer__marquee {
-  margin-bottom: 70px;
-
-  @include media ($mobile) {
-    margin-bottom: 40px;
-  }
-}
-
-.offer__bottom-container {
-  padding-right: 110px;
-  padding-left: 60px;
-  display: flex;
-  gap: 110px;
-
-  @include media ($tablet-pro) {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  @include media ($tablet) {
-    flex-direction: column-reverse;
-    gap: 40px;
-  }
-}
-
-.offer__bottom-wrapper {
-  @include media ($mobile) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.offer__picture--second {
-  margin-top: 30px;
 }
 
 .offer__subhead {
@@ -149,24 +32,4 @@
 
 .offer__details {
   margin-bottom: 10px;
-}
-
-.offer__carousel {
-  display: flex;
-  gap: 20px;
-  margin-left: auto;
-  max-width: 116px;
-
-  @include media ($mobile) {
-    display: none;
-  }
-}
-
-.offer_icon {
-  width: 48px;
-  height: 15px;
-}
-
-.offer_icon--right {
-  transform: rotate(180deg);
 }

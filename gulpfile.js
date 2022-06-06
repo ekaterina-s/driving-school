@@ -20,7 +20,7 @@ const buildFolder = 'docs'; //папка куда собирается прое�
 function html() {
   return src([sourceFolder + '/html/**.html'])
     .pipe(include())
-    .pipe(webpHTML())
+    // .pipe(webpHTML())
     .pipe(gulpHtmlBemValidator())
     .pipe(cachebust({
       type: 'timestamp'
@@ -98,7 +98,8 @@ function img() {
         encodeOptions: {
           mozjpeg: {},
           webp: {},
-          avif: {}
+          avif: {},
+          oxipng: {}
         },
       }))
     )

@@ -1,0 +1,43 @@
+.slider {
+  overflow: hidden;
+  // ???=>
+  max-width: 1120px;
+  position: relative;
+}
+
+.slider_wrapper {
+  display: flex;
+}
+
+.slider__carousel {
+  position: absolute;
+  bottom: 1%;
+  right: 2px;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  max-width: 116px;
+
+  @include media ($tablet) {
+    display: none;
+  }
+}
+
+.slider__button {
+  min-width: 0;
+
+  @include hover {
+    &:hover .slider__icon {
+        fill: red;
+    }
+  }
+}
+
+.slider__icon {
+  width: 48px;
+  height: 15px;
+}
+
+.slider__icon--right {
+  transform: rotate(180deg);
+}

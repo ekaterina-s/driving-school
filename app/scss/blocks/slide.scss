@@ -1,0 +1,31 @@
+.slide {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+
+  @include media ($tablet) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+}
+
+.slide__right {
+  @include media ($mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+}
+
+.slide__pic {
+  display: block;
+  transform: translateY(30px);
+
+  @include media ($tablet) {
+    transform: translateY(0);
+    margin: 0 auto;
+  }
+}

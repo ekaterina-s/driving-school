@@ -1,47 +1,49 @@
-.address-choice {
-  display: flex;
-  gap: 5px;
-  position: relative;
-  margin-right: 65px;
+//to be deleted
+
+// .address-choice {
+  // display: flex;
+  // gap: 5px;
+  // position: relative;
+  // margin-right: 65px;
 
   // @include media ($tablet) {
   //   margin-left: auto;
   // }
 
-  @include media ($tablet) {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
+  // @include media ($tablet) {
+  //   margin-right: 0;
+  //   margin-left: 0;
+  // }
+// }
 
-.address-choice__text {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  vertical-align: top;
-  border: 0;
-  text-decoration: none;
-  @include font(16px, 19px, $basic-family);
-  color: $header-secondary-color;
+// .address-choice__text {
+//   padding: 0;
+//   margin: 0;
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+//   vertical-align: top;
+//   border: 0;
+//   text-decoration: none;
+//   @include font(16px, 19px, $basic-family);
+//   color: $header-secondary-color;
 
-  &::before {
-    content: '';
-    background: url(../img/location.svg) no-repeat 0 0;
-    width: 14px;
-    height: 20px;
-  }
-}
+//   &::before {
+//     content: '';
+//     background: url(../img/location.svg) no-repeat 0 0;
+//     width: 14px;
+//     height: 20px;
+//   }
+// }
 
-.address-choice__button {
-  border: 0;
-}
+// .address-choice__button {
+//   border: 0;
+// }
 
-.address-choice__svg {
-  width: 10px;
-  height: 5px;
-}
+// .address-choice__svg {
+//   width: 10px;
+//   height: 5px;
+// }
 
 .address-choice__dropdown {
   padding: 20px;

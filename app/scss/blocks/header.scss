@@ -16,6 +16,18 @@
   @include media ($tablet) {
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 84px;
+      box-shadow: 5px 10px 30px rgba($top-panel-shadow, 0.1);
+      pointer-events: none;
+    }
   }
 }
 
@@ -128,9 +140,9 @@
 
 .header__callback {
   margin-left: auto;
-  padding: 15px 28px;
 
   @include media ($tablet-pro) {
+    min-width: 0;
     width: 45px;
     height: 45px;
     background: url(../img/phone-callback.svg) no-repeat center;
@@ -138,5 +150,6 @@
     border-radius: 10px;
     font-size: 0;
     padding: 0;
+    border-color: transparent;
   }
 }

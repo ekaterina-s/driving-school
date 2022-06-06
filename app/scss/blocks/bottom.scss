@@ -1,0 +1,9 @@
+.bottom__container {
+  padding-left: 86px;
+  padding-right: 142px;
+
+  @include media ($tablet-pro) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
