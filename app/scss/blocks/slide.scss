@@ -1,9 +1,8 @@
 .slide {
-  flex-shrink: 0;
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 110px;
 
   @include media ($tablet) {
     flex-direction: column-reverse;

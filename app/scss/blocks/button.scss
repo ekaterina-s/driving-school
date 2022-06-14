@@ -30,19 +30,6 @@
   }
 }
 
-.button--secondary {
-  color: $button-secondary-color;
-  border: 2px solid $button-secondary-border;
-  padding: 15px 29px;
-
-  @include hover {
-    &:hover {
-      background-color: $button-secondary-bg-hover;
-      color: $button-secondary-color-hover;
-    }
-  }
-}
-
 .button--outline-primary {
   color: $button-primary-bg;
   background-color: transparent;
@@ -54,4 +41,15 @@
       background-color: $button-primary-bg;
     }
   }
+}
+
+.button--secondary {
+  color: $button-secondary-color;
+  border: 2px solid $button-secondary-border;
+  background-color: $button-secondary-bg;
+    &:active {
+      background-color: $button-secondary-bg-active;
+      color: $button-secondary-color-active;
+      border-color: $button-secondary-border-active;
+    }
 }

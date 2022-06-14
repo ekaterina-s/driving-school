@@ -1,12 +1,30 @@
 .marquee {
+  background-color: $marquee-bg;
+  padding: 20px;
+  overflow: hidden;
+
+  @include media ($tablet) {
+    padding: 20px 15px;
+  }
+}
+
+.marquee__content {
   @include font(30px, 36px, $basic-family, bold);
   color: $marquee-color;
   text-transform: uppercase;
-  background-color: $marquee-bg;
-  padding: 17px 20px;
+  animation: runningText 15s linear infinite;
 
-  @include media ($mobile) {
+  @include media ($tablet) {
     @include font(20px, 24px, $basic-family, bold);
-    padding: 20px 15px;
+  }
+}
+
+@keyframes runningText {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
   }
 }

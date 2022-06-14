@@ -3,41 +3,57 @@
   // ???=>
   max-width: 1120px;
   position: relative;
+  padding-top: 9px;
 }
 
-.slider_wrapper {
+.slider__wrapper {
   display: flex;
 }
 
-.slider__carousel {
+.slider__nav {
   position: absolute;
-  bottom: 1%;
+  bottom: 66px;
   right: 2px;
   display: flex;
   gap: 20px;
   margin-left: auto;
   max-width: 116px;
 
+  @include media ($tablet-large) {
+    bottom: 5px;
+  }
+
   @include media ($tablet) {
     display: none;
-  }
-}
-
-.slider__button {
-  min-width: 0;
-
-  @include hover {
-    &:hover .slider__icon {
-        fill: red;
-    }
   }
 }
 
 .slider__icon {
   width: 48px;
   height: 15px;
+  transition: color 0.2s ease;
+  color: #101010;
 }
 
 .slider__icon--right {
   transform: rotate(180deg);
+}
+
+.slider__button {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  vertical-align: top;
+  background-color: transparent;
+  padding: 0;
+
+  @include hover {
+    &:hover .slider__icon {
+      color: red;
+    }
+  }
+
 }

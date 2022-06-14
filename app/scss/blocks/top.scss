@@ -26,19 +26,23 @@
 
 .top__right {
   grid-column: 9/12;
-  grid-row: 7/-1;
   position: relative;
   z-index: 0;
   display: flex;
 
   &::after {
-    content: ' ';
+    content: '';
     position: absolute;
     inset: 0;
     width: 100vw;
     background-color: $green-bg;
     border-radius: 10px 0 0 0;
     z-index: -1;
+
+    @include media ($mobile) {
+      top: -5px;
+      left: 33px;
+    }
   }
 
   @include media ($tablet-pro) {
@@ -50,7 +54,7 @@
   align-self: flex-end;
   margin-top: 92px;
   margin-left: -80px;
-  margin-bottom: 32px;
+  margin-bottom: 17px;
 
   @include media ($tablet) {
     margin-left: -36px;
