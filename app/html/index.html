@@ -40,7 +40,7 @@
   <picture>
     <!-- <source srcset="img/mobile-2.jpg" media="(min-width: 320px)"> -->
     <source srcset="img/Desktop.jpg" media="(min-width: 321px)">
-    <img hidden class="test" src="img/mobile.jpg" alt="">
+    <img class="test" src="img/mobile.jpg" alt="">
   </picture>
   <header class="header">
     <div class="header__top-panel top-panel">
@@ -210,28 +210,52 @@
     <div class="container">
       <h1 class="branches__head section-head">Наши филиалы</h1>
     </div>
-    <div class="container branches__container">
-      <div class="branches__buttons-container">
-        <button class="branches__button button button--md button--secondary" type="button">Учебные классы</button>
-        <button class="branches__button button button--md button--secondary" type="button">Автодром</button>
+    <div class="container branches__tab-container">
+
+      <div class="branches__tab tab">
+        <button class="tab__button button button--md button--secondary js-tab-button _active" type="button">Учебные классы</button>
+        <button class="tab__button button button--md button--secondary js-tab-button" type="button">Автодром</button>
       </div>
-      <div class="branches__locations-container">
+
+      <div class="branches__tabcontent tabcontent">
+        <ul class="tabcontent__list js-tabcontent-list _active">
+          <li class="tabcontent__item"><a class="tabcontent__link _active" href="#">Пр. Культуры, 31–1</a></li>
+          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Ушинского, 5–1</a></li>
+          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Пр. Солидарности, 11–1</a></li>
+          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Руднева, 22–1</a></li>
+        </ul>
+        <ul class="tabcontent__list js-tabcontent-list">
+          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Бабушкинского, д. 119</a></li>
+          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Репищева, д. 14</a></li>
+        </ul>
+        <div class="tabcontent__pagination pagination">
+          <div class="pagination__number _active">1</div>
+          <div class="pagination__number pagination__number--slash">/</div>
+          <div class="pagination__number">4</div>
+        </div>
+      </div>
+
+      <!-- <div class="tabcontent__buttons-container">
+        <button class="tabcontent__button button button--md button--secondary" type="button">Учебные классы</button>
+        <button class="branches__button button button--md button--secondary" type="button">Автодром</button>
+      </div> -->
+      <!-- <div class="branches__locations-container">
         <ul class="branches__list">
-          <li class="branches__item _active">Пр. Культуры, 31–1</li>
-          <li class="branches__item">Ул. Ушинского, 5–1</li>
-          <li class="branches__item">Пр. Солидарности, 11–1</li>
-          <li class="branches__item">Ул. Руднева, 22–1</li>
+          <li class="branches__item"><a class="branches__link _active" href="#">Пр. Культуры, 31–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Ушинского, 5–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Пр. Солидарности, 11–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Руднева, 22–1</a></li>
         </ul>
         <ul class="branches__list branches__list--second">
-          <li class="branches__item">Ул. Бабушкинского, д. 119</li>
-          <li class="branches__item">Ул. Репищева, д. 14</li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Бабушкинского, д. 119</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Репищева, д. 14</a></li>
         </ul>
         <div class="branches__pagination pagination">
           <div class="pagination__number _active">1</div>
           <div class="pagination__slash">/</div>
           <div class="pagination__number">4</div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <script src="js/main.js"></script>

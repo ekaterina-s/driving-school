@@ -20,10 +20,6 @@
   max-width: 116px;
 
   @include media ($tablet-large) {
-    bottom: 5px;
-  }
-
-  @include media ($tablet) {
     display: none;
   }
 }
@@ -32,7 +28,7 @@
   width: 48px;
   height: 15px;
   transition: color 0.2s ease;
-  color: #101010;
+  color: $slider-icon;
 }
 
 .slider__icon--right {
@@ -52,7 +48,7 @@
 
   @include hover {
     &:hover .slider__icon {
-      color: red;
+      color: $slider-icon-hover;
     }
   }
 

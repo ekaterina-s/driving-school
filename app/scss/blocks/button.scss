@@ -47,9 +47,9 @@
   color: $button-secondary-color;
   border: 2px solid $button-secondary-border;
   background-color: $button-secondary-bg;
-    &:active {
-      background-color: $button-secondary-bg-active;
-      color: $button-secondary-color-active;
-      border-color: $button-secondary-border-active;
-    }
+    // &:active {
+    //   background-color: $button-secondary-bg-active;
+    //   color: $button-secondary-color-active;
+    //   border-color: $button-secondary-border-active;
+    // }
 }

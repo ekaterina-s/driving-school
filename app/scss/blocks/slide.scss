@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 110px;
+  gap: 109px;
 
   @include media ($tablet) {
     flex-direction: column-reverse;
-    gap: 30px;
+    gap: 36px;
   }
 }
 

@@ -1,0 +1,22 @@
+.tab {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @include media ($tablet) {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 15px;
+  }
+}
+
+.tab__button {
+  &._active {
+    background-color: $button-secondary-bg-active;
+    color: $button-secondary-color-active;
+    border-color: $button-secondary-border-active;
+  }
+}

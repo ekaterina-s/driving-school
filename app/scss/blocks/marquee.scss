@@ -13,6 +13,7 @@
   color: $marquee-color;
   text-transform: uppercase;
   animation: runningText 15s linear infinite;
+  white-space: nowrap;
 
   @include media ($tablet) {
     @include font(20px, 24px, $basic-family, bold);

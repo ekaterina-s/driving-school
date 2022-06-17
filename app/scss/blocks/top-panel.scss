@@ -26,9 +26,7 @@
     display: grid;
     grid-template-columns: 182px 1fr;
     grid-template-rows: repeat(2, 1fr);
-    // column-gap: 83px;
     row-gap: 37px;
-    // grid-template-areas: ;
   }
 }
 
@@ -50,7 +48,7 @@
       left: 60px;
       height: 38px;
       width: 1px;
-      background-color: #DBDBDB;
+      background-color: $top-panel-logo;
     }
   }
 

@@ -1,0 +1,67 @@
+.tabcontent {
+  position: relative;
+
+  @include media ($tablet) {
+    max-width: 200px;
+  }
+}
+
+.tabcontent__list {
+  display: none;
+
+  &._active {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 84px;
+    align-items: center;
+    justify-content: center;
+
+    @include media ($tablet-large) {
+      gap: 25px;
+    }
+
+    @include media ($tablet) {
+      gap: 0;
+    }
+  }
+}
+
+.tabcontent__link {
+  text-decoration: none;
+  @include font(20px, 26px, $basic-family, bold);
+  color: $tab-content-link;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    background: url(../img/branch-location.svg);
+    width: 24px;
+    height: 33px;
+  }
+
+  @include media ($tablet) {
+    display: none;
+
+    &._active {
+      display: flex;
+      gap: 14px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include font(16px, 21px, $basic-family, bold);
+
+      &::before {
+        content: '';
+        background: url(../img/branch-location.svg);
+        width: 24px;
+        height: 33px;
+      }
+    }
+  }
+}

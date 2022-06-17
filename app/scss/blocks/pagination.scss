@@ -1,0 +1,21 @@
+.pagination {
+  display: none;
+
+  @include media ($tablet) {
+    display: flex;
+    position: absolute;
+    left: -41px;
+    top: 91px;
+  }
+}
+
+.pagination__number {
+  @include media ($tablet) {
+    @include font(16px, 21px, $basic-family, bold);
+    color: $pagination-number;
+  }
+
+  &._active {
+    color: $pagination-number-active;
+  }
+}
