@@ -8,23 +8,23 @@
 
 .tabcontent__list {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 84px;
+  align-items: center;
+  justify-content: center;
+
+  @include media ($tablet-large) {
+    gap: 25px;
+  }
+
+  @include media ($tablet) {
+    gap: 0;
+  }
 
   &._active {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
     display: flex;
-    gap: 84px;
-    align-items: center;
-    justify-content: center;
-
-    @include media ($tablet-large) {
-      gap: 25px;
-    }
-
-    @include media ($tablet) {
-      gap: 0;
-    }
   }
 }
 
