@@ -1,0 +1,39 @@
+.slider-nav {
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  max-width: 116px;
+
+  @include media ($tablet-large) {
+    display: none;
+  }
+}
+
+.slider-nav__icon {
+  width: 48px;
+  height: 15px;
+  transition: color 0.2s ease;
+  color: $slider-icon;
+}
+
+.slider-nav__icon--right {
+  transform: rotate(180deg);
+}
+
+.slider-nav__button {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  vertical-align: top;
+  background-color: transparent;
+  padding: 0;
+
+  @include hover {
+    &:hover .slider__icon {
+      color: $slider-icon-hover;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.instructors-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 47px;
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -315px;
+    width: 695px;
+    background-color: #2b8e53;
+    z-index: -1;
+  }
+}

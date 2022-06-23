@@ -1,0 +1,19 @@
+.instructors__head {
+  color: #fff;
+
+  @include media ($tablet) {
+    color: #101010;
+  }
+}
+
+.instructors__break {
+  @include media ($tablet) {
+    display: none;
+  }
+}
+
+.instructors__slider-list {
+  position: absolute;
+  top: 0;
+  right: -315px;
+}

@@ -9,7 +9,12 @@
 @import 'blocks/section-head.scss';
 @import 'blocks/section-subhead.scss';
 @import 'blocks/section-description.scss';
+@import 'blocks/section-text.scss';
 @import 'blocks/marquee.scss';
+@import 'blocks/slider.scss';
+@import 'blocks/slide.scss';
+@import 'blocks/slider-list.scss';
+@import 'blocks/slider-item.scss';
 @import 'blocks/top-panel.scss';
 @import 'blocks/button.scss';
 @import 'blocks/header.scss';
@@ -21,10 +26,10 @@
 @import 'blocks/offer.scss';
 @import 'blocks/top.scss';
 @import 'blocks/bottom.scss';
-@import 'blocks/slider.scss';
-@import 'blocks/slide.scss';
 @import 'blocks/branches.scss';
-
 @import 'blocks/tab.scss';
 @import 'blocks/tabcontent.scss';
 @import 'blocks/pagination.scss';
+@import 'blocks/slider-nav.scss';
+@import 'blocks/instructors.scss';
+@import 'blocks/instructors-container.scss';

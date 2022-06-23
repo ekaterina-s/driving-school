@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1655484072421">
+  <link rel="stylesheet" href="css/main.css?t=1655931147358">
   <svg style="display: none;">
     <symbol viewBox="0 0 32 32" id="instagram">
       <path
@@ -67,23 +67,6 @@
             </ul>
           </div>
         </div>
-        <!-- <div class="top-panel__address-choice address-choice">
-          <p class="address-choice__text">Выберите адрес</p>
-          <button class="address-choice__button button" type="button" aria-label="выбор адреса школы"><svg
-              class="address-choice__svg">
-              <use xlink:href="#dropdown" />
-            </svg></a>
-          </button>
-          <div class="address-choice__dropdown dropdown js-dropdown">
-            <ul class="dropdown__list">
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Ушинского, 5-1</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Руднева, 22-1</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Бабушкина, 119</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Репищева, 14</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Солидарности, 11-1</a></li>
-            </ul>
-          </div>
-        </div> -->
         <div class="header__overlay js-overlay">
           <div class="header__nav">
             <nav class="nav container ">
@@ -192,13 +175,13 @@
               </div>
             </div>
           </div>
-          <div class="slider__nav">
-            <button class="slider__button slider__button--left" type="button"><svg
-                class="slider__icon slider__icon--left">
+          <div class="slider-nav slider__nav">
+            <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+                class="slider-nav__icon slider-nav__icon--left">
                 <use xlink:href="#left" />
               </svg></button>
-            <button class="slider__button slider__button--right" type="button"><svg
-                class="slider__icon slider__icon--right">
+            <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+                class="slider-nav__icon slider-nav__icon--right">
                 <use xlink:href="#left" />
               </svg></button>
           </div>
@@ -213,52 +196,85 @@
     <div class="container branches__tab-container">
 
       <div class="branches__tab tab">
-        <button class="tab__button button button--md button--secondary js-tab-button _active" type="button">Учебные классы</button>
+        <button class="tab__button button button--md button--secondary js-tab-button _active" type="button">Учебные
+          классы</button>
         <button class="tab__button button button--md button--secondary js-tab-button" type="button">Автодром</button>
       </div>
 
       <div class="branches__tabcontent tabcontent">
         <ul class="tabcontent__list js-tabcontent-list _active">
-          <li class="tabcontent__item"><a class="tabcontent__link _active" href="#">Пр. Культуры, 31–1</a></li>
-          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Ушинского, 5–1</a></li>
-          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Пр. Солидарности, 11–1</a></li>
-          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Руднева, 22–1</a></li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link _active" href="#">Пр. Культуры, 31–1</a>
+          </li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Ушинского, 5–1</a></li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Пр. Солидарности, 11–1</a></li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Руднева, 22–1</a></li>
         </ul>
         <ul class="tabcontent__list js-tabcontent-list">
-          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Бабушкинского, д. 119</a></li>
-          <li class="tabcontent__item"><a class="tabcontent__link" href="#">Ул. Репищева, д. 14</a></li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Бабушкинского, д. 119</a>
+          </li>
+          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Репищева, д. 14</a></li>
         </ul>
         <div class="tabcontent__pagination pagination">
-          <div class="pagination__number _active">1</div>
-          <div class="pagination__number pagination__number--slash">/</div>
-          <div class="pagination__number">4</div>
+          <div class="section-text pagination__number _active">1</div>
+          <div class="section-text pagination__number pagination__number--slash">/</div>
+          <div class="section-text pagination__number">4</div>
         </div>
       </div>
-
-      <!-- <div class="tabcontent__buttons-container">
-        <button class="tabcontent__button button button--md button--secondary" type="button">Учебные классы</button>
-        <button class="branches__button button button--md button--secondary" type="button">Автодром</button>
-      </div> -->
-      <!-- <div class="branches__locations-container">
-        <ul class="branches__list">
-          <li class="branches__item"><a class="branches__link _active" href="#">Пр. Культуры, 31–1</a></li>
-          <li class="branches__item"><a class="branches__link" href="#">Ул. Ушинского, 5–1</a></li>
-          <li class="branches__item"><a class="branches__link" href="#">Пр. Солидарности, 11–1</a></li>
-          <li class="branches__item"><a class="branches__link" href="#">Ул. Руднева, 22–1</a></li>
-        </ul>
-        <ul class="branches__list branches__list--second">
-          <li class="branches__item"><a class="branches__link" href="#">Ул. Бабушкинского, д. 119</a></li>
-          <li class="branches__item"><a class="branches__link" href="#">Ул. Репищева, д. 14</a></li>
-        </ul>
-        <div class="branches__pagination pagination">
-          <div class="pagination__number _active">1</div>
-          <div class="pagination__slash">/</div>
-          <div class="pagination__number">4</div>
-        </div>
-      </div> -->
     </div>
   </section>
-  <script src="js/main.js?t=1655484072421"></script>
+  <section class="instructors">
+    <div class="instructors-container container">
+      <h1 class="section-head instructors__head">Наши <br class="instructors__break"> инструкторы</h1>
+      <ul class="instructors__slider-list slider-list">
+        <li class="slider-list__item slider-item _active">
+          <div class="slider-item__about about">
+            <h3 class="section-text about__head">Любимов Игорь Юрьевич</h3>
+            <p class="section-description about__description about__description--first">Стаж вождения с 1996 г.</p>
+            <p class="section-description about__description about__description--second">Инструктор с 2002 г.</p>
+          </div>
+          <picture>
+            <source media="(min-width: 641px)" srcset="img/instructors-pic-1.jpg">
+            <img class="slider-item__img _active" src="img/instructors-pic-1-mobile.png" alt="фото инструктора">
+          </picture>
+        </li>
+        <li class="slider-list__item slider-item">
+          <h3 class="slider-item__head"></h3>
+          <p class="section-description slider-item__description"></p>
+          <img src="img/instructors-pic-2.jpg" alt="" class="slider-item__img">
+        </li>
+        <li class="slider-list__item slider-item">
+          <h3 class="slider-item__head"></h3>
+          <p class="section-description slider-item__description"></p>
+          <img src="img/instructors-pic-3.jpg" alt="" class="slider-item__img">
+        </li>
+        <li class="slider-list__item slider-item">
+          <h3 class="slider-item__head"></h3>
+          <p class="section-description slider-item__description"></p>
+          <img src="img/instructors-pic-4.jpg" alt="" class="slider-item__img">
+        </li>
+      </ul>
+      <p class="section-description instructors__description">Каждый инструктор имеет свидетельство, предоставляющее
+        право
+        на обучение вождению автотранспортными средствами. Все инструкторы проходят повышение квалификации по программе
+        «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</p>
+      <div class="instructors__pagination pagination">
+        <div class="pagination__number _active">1</div>
+        <div class="pagination__number pagination__number--slash">/</div>
+        <div class="pagination__number">4</div>
+      </div>
+      <div class="instructors__slider-nav slider-nav">
+        <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+            class="slider-nav__icon slider-nav__icon--left">
+            <use xlink:href="#left" />
+          </svg></button>
+        <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+            class="slider-nav__icon slider-nav__icon--right">
+            <use xlink:href="#left" />
+          </svg></button>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js?t=1655931147358"></script>
 </body>
 
 </html>

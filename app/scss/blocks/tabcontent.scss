@@ -30,8 +30,6 @@
 
 .tabcontent__link {
   text-decoration: none;
-  @include font(20px, 26px, $basic-family, bold);
-  color: $tab-content-link;
   display: flex;
   gap: 14px;
   flex-direction: column;
@@ -54,7 +52,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      @include font(16px, 21px, $basic-family, bold);
 
       &::before {
         content: '';
