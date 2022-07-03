@@ -1,0 +1,16 @@
+.opinions-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.opinions-list__item {
+  @include media ($tablet) {
+    display: none;
+    &._active {
+      display: block;
+    }
+  }
+}

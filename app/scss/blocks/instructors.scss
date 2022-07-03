@@ -1,5 +1,32 @@
+.instructors {
+  margin-bottom: 150px;
+  overflow: hidden;
+
+  @include media ($tablet) {
+    margin-bottom: 80px;
+  }
+}
+
+.instructors__container {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  align-items: flex-start;
+}
+
 .instructors__head {
   color: #fff;
+  position: relative;
+  padding: 40px 46px 40px 0;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 100vw;
+    background-color: #2b8e53;
+    z-index: -1;
+  }
 
   @include media ($tablet) {
     color: #101010;
@@ -12,8 +39,126 @@
   }
 }
 
-.instructors__slider-list {
-  position: absolute;
-  top: 0;
-  right: -315px;
+.instructors__right {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  column-gap: 30px;
+  align-items: flex-start;
+}
+
+.main-slider {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  max-width: 580px;
+  position: relative;
+}
+
+.main-slider__item {
+  display: none;
+
+  &._active {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.main-slider__content {
+  padding: 42px 20px 42px 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F1F1F1;
+}
+
+.main-slider__title {
+  padding: 0;
+  margin: 0;
+  color: #101010;
+  text-align: center;
+  @include font(20px, 26px, $basic-family, bold);
+}
+
+.main-slider__description {
+  text-align: center;
+  color: #373737;
+  @include font(16px, 22px, $basic-family);
+}
+
+.main-slider__info--top {
+  margin-bottom: -12px;
+}
+
+.main-slider__pic {
+  height: auto;
+}
+
+.second-slider {
+  display: grid;
+  column-gap: 30px;
+  grid-auto-flow: column;
+  list-style-type: none;
+  background: linear-gradient(#ccc, #ccc) no-repeat left bottom/100% 160px;
+  padding-bottom: 90px;
+  // overflow: hidden;
+  // max-width: 646px;
+  position: relative;
+}
+
+.second-slider__item {
+  width: 190px;
+}
+
+.second-slider__description {
+  padding: 0;
+  margin: 0;
+  @include font(16px, 21px, $basic-family);
+  color: $section-description-color;
+}
+
+.instructors__more {
+  @include media ($tablet) {
+    display: none;
+  }
+}
+
+.instructors__description {
+  padding: 0;
+  margin: 0;
+  @include font(16px, 21px, $basic-family);
+  color: $section-description-color;
+}
+
+.instructors__button-more {
+  display: none;
+
+  @include media ($tablet) {
+    vertical-align: top;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #2B8E53;
+
+    &::after {
+      content: '';
+      background: url(../img/down.svg) no-repeat;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.instructors__slider-pagination {
+  display: flex;
+
+  @include media ($tablet) {
+    bottom: 0;
+    left: 20px;
+  }
 }

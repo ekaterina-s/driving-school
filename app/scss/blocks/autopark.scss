@@ -1,0 +1,26 @@
+.autopark {
+  margin-bottom: 150px;
+}
+
+.autopark__container {
+  @include media ($tablet) {
+    position: relative;
+  }
+}
+
+.autopark__head {
+  text-align: center;
+  margin-bottom: 70px;
+
+  @include media ($tablet) {
+   text-align: left;
+   margin-bottom: 40px;
+  }
+}
+
+.autopark__pagination {
+  @include media ($tablet) {
+    bottom: 0;
+    left: 20px;
+  }
+}

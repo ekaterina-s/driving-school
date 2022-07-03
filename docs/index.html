@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1655931147358">
+  <link rel="stylesheet" href="css/main.css?t=1656868744945">
   <svg style="display: none;">
     <symbol viewBox="0 0 32 32" id="instagram">
       <path
@@ -40,7 +40,7 @@
   <picture>
     <!-- <source srcset="img/mobile-2.jpg" media="(min-width: 320px)"> -->
     <source srcset="img/Desktop.jpg" media="(min-width: 321px)">
-    <img hidden class="test" src="img/mobile.jpg" alt="">
+    <img class="test" src="img/mobile.jpg" alt="">
   </picture>
   <header class="header">
     <div class="header__top-panel top-panel">
@@ -135,9 +135,9 @@
     <div class="offer__top top">
       <div class="container top__container">
         <div class="top__left left">
-          <h1 class="section-head offer__head">Автошкола <br>
-            в Санкт-Петербурге</h1>
-          <p class="section-description offer__description">Проходите обучение
+          <h2 class="section-head offer__head">Автошкола <br>
+            в Санкт-Петербурге</h2>
+          <p class="offer__description">Проходите обучение
             как вам удобно —
             в группе выходного дня,
             по вечерам или онлайн
@@ -166,7 +166,7 @@
               </picture>
               <div class="slide__right">
                 <h2 class="section-subhead offer__subhead">Сделайте подарок близким!</h2>
-                <p class="section-description offer__description">Подарите именной сертификат
+                <p class="offer__description">Подарите именной сертификат
                   на обучение вождению <br> на категорию
                   B
                 </p>
@@ -191,7 +191,7 @@
   </section>
   <section class="branches">
     <div class="container">
-      <h1 class="branches__head section-head">Наши филиалы</h1>
+      <h2 class="branches__head section-head">Наши филиалы</h2>
     </div>
     <div class="container branches__tab-container">
 
@@ -223,46 +223,155 @@
     </div>
   </section>
   <section class="instructors">
-    <div class="instructors-container container">
-      <h1 class="section-head instructors__head">Наши <br class="instructors__break"> инструкторы</h1>
-      <ul class="instructors__slider-list slider-list">
-        <li class="slider-list__item slider-item _active">
-          <div class="slider-item__about about">
-            <h3 class="section-text about__head">Любимов Игорь Юрьевич</h3>
-            <p class="section-description about__description about__description--first">Стаж вождения с 1996 г.</p>
-            <p class="section-description about__description about__description--second">Инструктор с 2002 г.</p>
+    <div class="instructors__container container">
+      <h2 class="section-head instructors__head">Наши <br class="instructors__break"> инструкторы</h2>
+      <div class="instructors__right">
+        <ul class="instructors__main-slider main-slider">
+          <li class="main-slider__item _active">
+            <div class="main-slider__content">
+              <h3 class="main-slider__title">Любимов Игорь Юрьевич</h3>
+              <div class="main-slider__description">
+                <p class="main-slider__info main-slider__info--top">Стаж вождения с 1996 г.</p>
+                <p class="main-slider__info main-slider__info--bottom">Инструктор с 2002 г.</p>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 641px)" srcset="img/instructors-pic-1.jpg">
+              <img class="main-slider__pic" src="img/instructors-pic-1-mobile.png" alt="фото инструктора" width="290"
+                height="280">
+            </picture>
+          </li>
+          <li class="main-slider__item">
+            <div class="main-slider__content">
+              <h3 class="main-slider__title">Любимов Игорь Юрьевич</h3>
+              <div class="main-slider__description">
+                <p class="main-slider__info main-slider__info--top">Стаж вождения с 1996 г.</p>
+                <p class="main-slider__info main-slider__info--bottom">Инструктор с 2002 г.</p>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 641px)" srcset="img/instructors-pic-1.jpg">
+              <img class="main-slider__pic" src="img/instructors-pic-1-mobile.png" alt="фото инструктора" width="290"
+                height="280">
+            </picture>
+          </li>
+          <li class="main-slider__item">
+            <div class="main-slider__content">
+              <h3 class="main-slider__title">Любимов Игорь Юрьевич</h3>
+              <div class="main-slider__description">
+                <p class="main-slider__info main-slider__info--top">Стаж вождения с 1996 г.</p>
+                <p class="main-slider__info main-slider__info--bottom">Инструктор с 2002 г.</p>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 641px)" srcset="img/instructors-pic-1.jpg">
+              <img class="main-slider__pic" src="img/instructors-pic-1-mobile.png" alt="фото инструктора" width="290"
+                height="280">
+            </picture>
+          </li>
+
+        </ul>
+        <ul class="instructors__second-slider second-slider">
+          <li class="second-slider__item">
+            <h3 class="second-slider__head"></h3>
+            <p class="second-slider__description"></p>
+            <img class="second-slider__img" src="img/instructors-pic-2.jpg" alt="фото инструктора" width="190"
+              height="200">
+          </li>
+          <li class="second-slider__item">
+            <h3 class="second-slider__head"></h3>
+            <p class="second-slider__description"></p>
+            <img class="second-slider__img" src="img/instructors-pic-3.jpg" alt="фото инструктора" width="190"
+              height="200">
+          </li>
+          <li class="second-slider__item">
+            <h3 class="second-slider__head"></h3>
+            <p class="second-slider__description"></p>
+            <img class="second-slider__img" src="img/instructors-pic-4.jpg" alt="фото инструктора" width="190"
+              height="200">
+          </li>
+        </ul>
+        <div class="pagination instructors__slider-pagination">
+          <div class="section-text pagination__number _active">1</div>
+          <div class="section-text pagination__number pagination__number--slash">/</div>
+          <div class="section-text pagination__number">4</div>
+        </div>
+        <div class="instructors__slider-nav slider-nav">
+          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--left">
+              <use xlink:href="#left" />
+            </svg></button>
+          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--right">
+              <use xlink:href="#left" />
+            </svg></button>
+        </div>
+      </div>
+      <p class="instructors__description">Каждый инструктор имеет свидетельство, предоставляющее
+        право
+        на обучение вождению автотранспортными средствами. <span class="instructors__more">Все инструкторы проходят
+          повышение квалификации по программе
+          «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</span></p>
+      <button class="instructors__button-more" type="button">Читать больше</button>
+    </div>
+  </section>
+  <!-- <section class="autopark">
+    <div class="autopark__container container">
+      <h2 class="section-head autopark__head">Автопарк</h2>
+      <ul class="autopark__list autopark-list">
+        <li class="autopark-list__item autopark-item">
+          <div class="inscription autopark-item__inscription">
+            <div class="inscription__model">Škoda Octavia</div>
+            <div class="inscription__released">Год выпуска: 2017</div>
           </div>
-          <picture>
-            <source media="(min-width: 641px)" srcset="img/instructors-pic-1.jpg">
-            <img class="slider-item__img _active" src="img/instructors-pic-1-mobile.png" alt="фото инструктора">
-          </picture>
+          <img src="img/autopark-car_1.png" alt="машина автопарка" width="263" height="143">
         </li>
-        <li class="slider-list__item slider-item">
-          <h3 class="slider-item__head"></h3>
-          <p class="section-description slider-item__description"></p>
-          <img src="img/instructors-pic-2.jpg" alt="" class="slider-item__img">
+        <li class="autopark-list__item autopark-item _active">
+          <div class="inscription autopark-item__inscription _active">
+            <div class="inscription__model">Škoda Octavia</div>
+            <div class="inscription__released">Год выпуска: 2017</div>
+          </div>
+          <img src="img/autopark-car_2_active.png" alt="машина автопарка" width="526" height="286">
         </li>
-        <li class="slider-list__item slider-item">
-          <h3 class="slider-item__head"></h3>
-          <p class="section-description slider-item__description"></p>
-          <img src="img/instructors-pic-3.jpg" alt="" class="slider-item__img">
+        <li class="autopark-list__item autopark-item">
+          <div class="inscription autopark-item__inscription">
+            <div class="inscription__model">Volkswagen Jetta</div>
+            <div class="inscription__released">Год выпуска: 2014</div>
+          </div>
+          <img src="img/autopark-car_3.png" alt="машина автопарка" width="263" height="143">
         </li>
-        <li class="slider-list__item slider-item">
-          <h3 class="slider-item__head"></h3>
-          <p class="section-description slider-item__description"></p>
-          <img src="img/instructors-pic-4.jpg" alt="" class="slider-item__img">
+        <li class="autopark-list__item autopark-item">
+          <div class="inscription autopark-item__inscription">
+            <div class="inscription__model">Renault Logan</div>
+            <div class="inscription__released">Год выпуска: 2009</div>
+          </div>
+          <img src="img/autopark-car_4.png" alt="машина автопарка" width="263" height="143">
         </li>
       </ul>
-      <p class="section-description instructors__description">Каждый инструктор имеет свидетельство, предоставляющее
-        право
-        на обучение вождению автотранспортными средствами. Все инструкторы проходят повышение квалификации по программе
-        «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</p>
-      <div class="instructors__pagination pagination">
-        <div class="pagination__number _active">1</div>
-        <div class="pagination__number pagination__number--slash">/</div>
-        <div class="pagination__number">4</div>
+      <div class="autopark__pagination pagination">
+        <div class="section-text pagination__number _active">1</div>
+        <div class="section-text pagination__number pagination__number--slash">/</div>
+        <div class="section-text pagination__number">4</div>
       </div>
-      <div class="instructors__slider-nav slider-nav">
+    </div>
+  </section>
+  <section class="opinions">
+    <div class="opinions__container container">
+      <h2 class="section-head opinions__head">Отзывы</h2>
+      <ul class="opinions__list opinions-list">
+        <li class="opinions-list__item"><img src="img/opinions-pic-1.jpg" alt="фото студента" width="410" height="220"></li>
+        <li class="opinions-list__item"><img src="img/opinions-pic-2.jpg" alt="фото студента" width="410" height="260"></li>
+        <li class="opinions-list__item _active"><img src="img/opinions-pic-3.jpg" alt="видео от студента" width="410" height="300">
+        </li>
+        <li class="opinions-list__item"><img src="img/opinions-pic-2.jpg" alt="фото студента" width="410" height="260"></li>
+        <li class="opinions-list__item"><img src="img/opinions-pic-4.jpg" alt="фото студента" width="410" height="220"></li>
+      </ul>
+      <div class="pagination opinions__pagination">
+        <div class="section-text pagination__number _active">1</div>
+        <div class="section-text pagination__number pagination__number--slash">/</div>
+        <div class="section-text pagination__number">10</div>
+      </div>
+      <div class="opinions__slider-nav slider-nav">
         <button class="slider-nav__button slider-nav__button--left" type="button"><svg
             class="slider-nav__icon slider-nav__icon--left">
             <use xlink:href="#left" />
@@ -273,8 +382,8 @@
           </svg></button>
       </div>
     </div>
-  </section>
-  <script src="js/main.js?t=1655931147358"></script>
+  </section> -->
+  <script src="js/main.js?t=1656868744945"></script>
 </body>
 
 </html>

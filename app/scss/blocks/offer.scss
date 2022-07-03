@@ -18,6 +18,10 @@
 
 .offer__description {
   padding-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  @include font(16px, 21px, $basic-family);
+  color: $section-description-color;
 
   @include media ($mobile) {
     max-width: 250px;

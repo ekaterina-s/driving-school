@@ -1,0 +1,30 @@
+.autopark-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media ($tablet) {
+    display: none;
+
+    &._active {
+      display: block;
+    }
+  }
+}
+
+.autopark-item__inscription {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  @include font(16px, 21px, $basic-family);
+  color: #fff;
+  background-color: #FF574D;
+  max-width: 190px;
+  padding: 20px;
+  border-radius: 10px;
+
+  &._active {
+    display: flex;
+  }
+}

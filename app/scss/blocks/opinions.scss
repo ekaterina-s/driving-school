@@ -1,0 +1,33 @@
+.opinions {
+  padding-top: 60px;
+  margin-bottom: 150px;
+  background-color: #F2F2F2;
+
+  @include media ($tablet) {
+    background-color: transparent;
+  }
+}
+
+.opinions__container {
+  position: relative;
+}
+
+.opinions__head {
+  margin-bottom: 70px;
+  text-align: center;
+
+  @include media ($tablet) {
+    text-align: left;
+  }
+}
+
+.opinions__pagination {
+  display: flex;
+  bottom: 0;
+  left: 210px;
+}
+
+.opinions__slider-nav {
+  bottom: 0;
+  right: 0;
+}

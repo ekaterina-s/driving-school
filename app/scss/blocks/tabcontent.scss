@@ -62,3 +62,10 @@
     }
   }
 }
+
+.tabcontent__pagination {
+  @include media ($tablet) {
+    left: -41px;
+    top: 91px;
+  }
+}
