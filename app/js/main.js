@@ -1,15 +1,36 @@
-import { testFunction } from './scripts/test';
-testFunction();
-
 const burger = document.querySelector('.js-burger');
 const headerOverlay = document.querySelector('.js-overlay');
 const body = document.querySelector('.js-body');
+
+const dropdown = document.querySelector('.js-dropdown');
+const dropdownButton = document.querySelector('.dropdown__button');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('_active');
   headerOverlay.classList.toggle('_active');
   body.classList.toggle('lock');
 });
+
+dropdownButton.addEventListener('click', () => {
+  dropdown.classList.toggle('_active');
+});
+
+const autoparkItemPic = document.querySelectorAll('.autopark-item__pic');
+const autoparkItemInscription = document.querySelectorAll('.autopark-item__inscription');
+
+// autoparkItemPic.forEach((index) => {
+//   autoparkItemPic[index].addEventListener('click', () => {
+//     autoparkItemPic[index].classList.toggle('_active');
+//     autoparkItemPic[index].classList.toggle('_active');
+//   });
+// });
+for (let i = 0; i < autoparkItemPic.length; i++) {
+  autoparkItemPic[i].addEventListener('click', () => {
+    autoparkItemPic[i].classList.toggle('_active');
+    autoparkItemInscription[i].classList.toggle('_active');
+  });
+};
+
 
 const tabButtons = document.querySelectorAll('.js-tab-button');
 const tabcontentLists = document.querySelectorAll('.js-tabcontent-list');

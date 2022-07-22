@@ -54,6 +54,11 @@
   z-index: 2;
   box-shadow: 5px 10px 30px rgba($dropdown-shadow, 0.1);
   background-color: $dropdown-bg;
+  display: none;
+
+  &._active {
+    display: block;
+  }
 }
 
 .dropdown__list {
@@ -89,8 +94,4 @@
       font-weight: bold;
     }
   }
-}
-
-.js-dropdown {
-  display: none;
 }

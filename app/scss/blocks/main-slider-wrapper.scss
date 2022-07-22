@@ -1,0 +1,5 @@
+.main-slider-wrapper {
+  @include media ($tablet-large) {
+    position: relative;
+  }
+}

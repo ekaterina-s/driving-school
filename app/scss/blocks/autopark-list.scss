@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
+  display: grid;
   gap: 30px;
+  grid-auto-flow: column;
+  max-width: 1405px;
 }

@@ -12,6 +12,15 @@
   }
 }
 
+.autopark-item__pic {
+  cursor: pointer;
+
+  &._active {
+    width: 526px;
+    height: 286px;
+  }
+}
+
 .autopark-item__inscription {
   display: none;
   flex-direction: column;
@@ -25,6 +34,10 @@
   border-radius: 10px;
 
   &._active {
+    display: flex;
+  }
+
+  @include media ($tablet) {
     display: flex;
   }
 }

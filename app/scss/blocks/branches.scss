@@ -1,5 +1,10 @@
 .branches {
   margin-bottom: 150px;
+
+  @include media ($tablet-large) {
+    margin-bottom: 80px;
+    margin-bottom: 14px;
+  }
 }
 
 .branches__head {
