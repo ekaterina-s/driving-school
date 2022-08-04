@@ -24,12 +24,12 @@ const autoparkItemInscription = document.querySelectorAll('.autopark-item__inscr
 //     autoparkItemPic[index].classList.toggle('_active');
 //   });
 // });
-for (let i = 0; i < autoparkItemPic.length; i++) {
-  autoparkItemPic[i].addEventListener('click', () => {
-    autoparkItemPic[i].classList.toggle('_active');
-    autoparkItemInscription[i].classList.toggle('_active');
-  });
-};
+// for (let i = 0; i < autoparkItemPic.length; i++) {
+//   autoparkItemPic[i].addEventListener('click', () => {
+//     autoparkItemPic[i].classList.toggle('_active');
+//     autoparkItemInscription[i].classList.toggle('_active');
+//   });
+// };
 
 
 const tabButtons = document.querySelectorAll('.js-tab-button');

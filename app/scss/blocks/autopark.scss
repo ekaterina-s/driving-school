@@ -2,32 +2,63 @@
   margin-bottom: 150px;
 }
 
-.autopark__container {
-  @include media ($tablet-pro) {
-    position: relative;
-  }
-}
+// .autopark__container {
+//   @include media ($tablet-pro) {
+//     position: relative;
+//   }
+// }
 
 .autopark__head {
   text-align: center;
   margin-bottom: 70px;
+  margin-bottom: 200px;
+
+  @include media ($tablet-pro) {
+    margin-bottom: 40px;
+  }
 
   @include media ($tablet) {
     text-align: left;
-    margin-bottom: 40px;
+  }
+}
+
+.autopark-list-wrapper {
+  position: relative;
+}
+
+.autopark-list-nav {
+  display: none;
+
+  @include media ($tablet-large) {
+    top: 160px;
+    right: 70px;
+    display: flex;
+  }
+
+  @include media ($mobile) {
+    display: none;
   }
 }
 
 .autopark__pagination {
   @include media ($tablet-pro) {
-    bottom: -50px;
-    left: 40px;
     position: absolute;
     display: flex;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    padding: 10px;
   }
 
   @include media ($tablet) {
     bottom: -42px;
     left: 17px;
+  }
+
+  @include media ($mobile) {
+    top: 257px;
+    left: -263px;
   }
 }

@@ -3,18 +3,24 @@
   overflow: hidden;
 
   @include media ($tablet) {
-    margin-bottom: 80px;
+    margin-bottom: 86px;
   }
 }
 
 .instructors__container {
   display: grid;
-  grid-template-columns: 3fr 8fr;
+  grid-template-columns: 3fr 280px 8fr;
+  grid-template-rows: 210px auto auto;
   align-items: flex-start;
 
-  @include media ($tablet-large) {
-    display: flex;
-    flex-direction: column;
+  // @include media ($tablet-large) {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  @include media ($tablet-pro) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
 }
 
@@ -25,6 +31,7 @@
 
   @include media ($tablet-large) {
     color: #101010;
+    order: -1;
   }
 
   &::before {
@@ -60,13 +67,15 @@
 
   @include media ($tablet-pro) {
     width: 1224px;
+    width: 100%;
+    justify-content: center;
+    order: 3;
   }
 
   @include media ($tablet-large) {
     order: 2;
     margin-top: 40px;
-    grid-template-columns: none;
-    justify-content: stretch;
+    display: block;
   }
 }
 
@@ -76,7 +85,10 @@
   @include media ($tablet-large) {
     display: flex;
     bottom: 0;
-    left: 15px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    padding: 10px;
   }
 }
 
@@ -87,15 +99,23 @@
 }
 
 .instructors__description {
-  padding: 0;
+  padding: 70px 30px 0 0;
   margin: 0;
   @include font(16px, 21px, $basic-family);
   color: $section-description-color;
+  grid-column: 1/-2;
 
   @include media ($tablet-pro) {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    order: 2;
+  }
+
+  @include media ($tablet-large) {
+    order: 0;
+    padding: 0;
   }
 }
+
 
 .instructors__button-more {
   display: none;

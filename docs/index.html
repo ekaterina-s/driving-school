@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1658492157972">
+  <link rel="stylesheet" href="css/main.css?t=1659610440100">
   <svg style="display: none;">
     <symbol viewBox="0 0 32 32" id="instagram">
       <path
@@ -236,9 +236,9 @@
                   <p class="main-slider__info main-slider__info--bottom">Инструктор с 2002 г.</p>
                 </div>
               </div>
-              <picture>
+              <picture class="main-slider__pic">
                 <source media="(min-width: 1295px)" srcset="img/instructors-pic-1.jpg">
-                <img class="main-slider__pic" src="img/instructors-pic-1-mobile.png" alt="фото инструктора" width="290"
+                <img class="main-slider__img" src="img/instructors-pic-1-mobile.png" alt="фото инструктора" width="290"
                   height="280">
               </picture>
             </li>
@@ -303,7 +303,7 @@
             <div class="section-text pagination__number pagination__number--slash">/</div>
             <div class="section-text pagination__number">4</div>
           </div>
-          <div class="instructors__slider-nav slider-nav">
+          <div class="slider-nav instructors__slider-nav">
             <button class="slider-nav__button slider-nav__button--left" type="button"><svg
                 class="slider-nav__icon slider-nav__icon--left">
                 <use xlink:href="#left" />
@@ -326,56 +326,68 @@
   <section class="autopark">
     <div class="autopark__container container">
       <h2 class="section-head autopark__head">Автопарк</h2>
-      <ul class="autopark__list autopark-list">
-        <li class="autopark-list__item autopark-item">
-          <div class="inscription autopark-item__inscription">
-            <div class="inscription__model">Škoda Octavia</div>
-            <div class="inscription__released">Год выпуска: 2017</div>
-          </div>
-          <picture>
-            <source media="(min-width: 993px)" srcset="img/autopark-car_1_mobile.png">
-            <img class="autopark-item__pic" src="img/autopark-car_1.png" alt="машина автопарка" width="263"
-              height="143">
-          </picture>
-        </li>
-        <li class="autopark-list__item autopark-item _active">
-          <div class="inscription autopark-item__inscription">
-            <div class="inscription__model">Škoda Octavia</div>
-            <div class="inscription__released">Год выпуска: 2017</div>
-          </div>
-          <picture>
-            <source media="(min-width: 993px)" srcset="img/autopark-car_2_mobile.png">
-            <img class="autopark-item__pic" src="img/autopark-car_2.png" alt="машина автопарка" width="263"
-              height="143">
-          </picture>
-        </li>
-        <li class="autopark-list__item autopark-item">
-          <div class="inscription autopark-item__inscription">
-            <div class="inscription__model">Volkswagen Jetta</div>
-            <div class="inscription__released">Год выпуска: 2014</div>
-          </div>
-          <picture>
-            <source media="(min-width: 993px)" srcset="img/autopark-car_3_mobile.png">
-            <img class="autopark-item__pic" src="img/autopark-car_3.png" alt="машина автопарка" width="263"
-              height="143">
-          </picture>
-        </li>
-        <li class="autopark-list__item autopark-item">
-          <div class="inscription autopark-item__inscription">
-            <div class="inscription__model">Renault Logan</div>
-            <div class="inscription__released">Год выпуска: 2009</div>
-          </div>
-          <picture>
-            <source media="(min-width: 993px)" srcset="img/autopark-car_4_mobile.png">
-            <img class="autopark-item__pic" src="img/autopark-car_4.png" alt="машина автопарка" width="263"
-              height="143">
-          </picture>
-        </li>
-      </ul>
-      <div class="autopark__pagination pagination">
-        <div class="section-text pagination__number _active">1</div>
-        <div class="section-text pagination__number pagination__number--slash">/</div>
-        <div class="section-text pagination__number">4</div>
+      <div class="autopark-list-wrapper">
+        <ul class="autopark__list autopark-list">
+          <li class="autopark-list__item autopark-item">
+            <div class="inscription autopark-item__inscription">
+              <div class="inscription__model">Škoda Octavia</div>
+              <div class="inscription__released">Год выпуска: 2017</div>
+            </div>
+            <picture>
+              <source media="(min-width: 993px)" srcset="img/autopark-car_1.png">
+              <img class="autopark-item__pic" src="img/autopark-car_1_mobile.png" alt="машина автопарка" width="290"
+                height="157">
+            </picture>
+          </li>
+          <li class="autopark-list__item autopark-item _active">
+            <div class="inscription autopark-item__inscription">
+              <div class="inscription__model">Škoda Octavia</div>
+              <div class="inscription__released">Год выпуска: 2017</div>
+            </div>
+            <picture>
+              <source media="(min-width: 993px)" srcset="img/autopark-car_2.png">
+              <img class="autopark-item__pic" src="img/autopark-car_2_mobile.png" alt="машина автопарка" width="290"
+                height="157">
+            </picture>
+          </li>
+          <li class="autopark-list__item autopark-item">
+            <div class="inscription autopark-item__inscription">
+              <div class="inscription__model">Volkswagen Jetta</div>
+              <div class="inscription__released">Год выпуска: 2014</div>
+            </div>
+            <picture>
+              <source media="(min-width: 993px)" srcset="img/autopark-car_3.png">
+              <img class="autopark-item__pic" src="img/autopark-car_3_mobile.png" alt="машина автопарка" width="290"
+                height="157">
+            </picture>
+          </li>
+          <li class="autopark-list__item autopark-item">
+            <div class="inscription autopark-item__inscription">
+              <div class="inscription__model">Renault Logan</div>
+              <div class="inscription__released">Год выпуска: 2009</div>
+            </div>
+            <picture>
+              <source media="(min-width: 993px)" srcset="img/autopark-car_4.png">
+              <img class="autopark-item__pic" src="img/autopark-car_4_mobile.png" alt="машина автопарка" width="290"
+                height="157">
+            </picture>
+          </li>
+        </ul>
+        <div class="autopark__pagination pagination">
+          <div class="section-text pagination__number _active">1</div>
+          <div class="section-text pagination__number pagination__number--slash">/</div>
+          <div class="section-text pagination__number">4</div>
+        </div>
+        <div class="autopark-list-nav slider-nav">
+          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--left">
+              <use xlink:href="#left" />
+            </svg></button>
+          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--right">
+              <use xlink:href="#left" />
+            </svg></button>
+        </div>
       </div>
     </div>
   </section>
@@ -408,7 +420,9 @@
       </div>
     </div>
   </section> -->
-  <script src="js/main.js?t=1658492157972"></script>
+  <script src="js/main.js?t=1659610440100"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+
 </body>
 
 </html>

@@ -3,13 +3,22 @@
   flex-direction: column;
   align-items: center;
 
-  @include media ($tablet) {
+  @include media ($mobile) {
     display: none;
 
     &._active {
       display: block;
     }
   }
+}
+
+.autopark-item:first-child {
+  // margin-left: 40px;
+}
+
+.autopark-item:last-child {
+  margin-top: -24px;
+  // margin-left: -248px;
 }
 
 .autopark-item__pic {
@@ -37,7 +46,7 @@
     display: flex;
   }
 
-  @include media ($tablet) {
+  @include media ($mobile) {
     display: flex;
   }
 }
