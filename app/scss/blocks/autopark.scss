@@ -1,5 +1,10 @@
 .autopark {
   margin-bottom: 150px;
+  overflow: hidden;
+
+  @include media ($tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 // .autopark__container {
@@ -11,7 +16,6 @@
 .autopark__head {
   text-align: center;
   margin-bottom: 70px;
-  margin-bottom: 200px;
 
   @include media ($tablet-pro) {
     margin-bottom: 40px;
@@ -22,16 +26,46 @@
   }
 }
 
-.autopark-list-wrapper {
+.autopark__list-wrapper {
   position: relative;
+  transform: translateX(90px);
+
+  @include media ($tablet) {
+    transform: translateX(0);
+  }
 }
 
-.autopark-list-nav {
-  display: none;
+.autopark__list {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style-type: none;
+  gap: 30px;
+  max-width: 1405px;
+  display: flex;
+  align-items: center;
+}
 
-  @include media ($tablet-large) {
-    top: 160px;
-    right: 70px;
+.autopark__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+
+  &._active {
+    display: block;
+  }
+
+  &._active .autopark__pic {
+    width: 526px;
+    height: 286px;
+
+    @include media ($mobile) {
+      width: 290px;
+      height: auto;
+    }
+  }
+
+  &._active .autopark__inscription {
     display: flex;
   }
 
@@ -40,11 +74,39 @@
   }
 }
 
+.autopark__item:last-child {
+  margin-top: -24px;
+}
+
+.autopark__pic {
+  cursor: pointer;
+  width: 263px;
+  height: auto;
+  display: block;
+}
+
+.autopark__inscription {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  @include font(16px, 21px, $basic-family);
+  color: $autopark-inscription-text;
+  background-color: $autopark-inscription-bg;
+  max-width: 190px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+
+  @include media ($mobile) {
+    display: flex;
+  }
+}
+
 .autopark__pagination {
   @include media ($tablet-pro) {
     position: absolute;
     display: flex;
-    top: 160px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -53,12 +115,30 @@
   }
 
   @include media ($tablet) {
-    bottom: -42px;
     left: 17px;
   }
 
   @include media ($mobile) {
     top: 257px;
     left: -263px;
+  }
+}
+
+.autopark__list-nav {
+  display: none;
+
+  @media(max-width: 1800px) {
+    bottom: 0;
+    right: 100px;
+    display: flex;
+  }
+
+  @include media ($tablet-large) {
+    // top: 160px;
+    display: flex;
+  }
+
+  @include media ($mobile) {
+    display: none;
   }
 }

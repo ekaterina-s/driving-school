@@ -4,7 +4,7 @@
   @include font(50px, 65px, $basic-family, bold);
   color: $section-head-color;
 
-  @include media ($tablet-pro) {
+  @include media ($tablet-large) {
     @include font(25px, 33px, $basic-family, bold);
   }
 }

@@ -1,5 +1,5 @@
 .instructors {
-  margin-bottom: 150px;
+  margin-bottom: 123px;
   overflow: hidden;
 
   @include media ($tablet) {
@@ -25,12 +25,12 @@
 }
 
 .instructors__head {
-  color: #fff;
+  color: $instructors-head-text-desk;
   position: relative;
   padding: 40px 46px 40px 0;
 
   @include media ($tablet-large) {
-    color: #101010;
+    color: $instructors-head-text-tablet;
     order: -1;
   }
 
@@ -39,7 +39,7 @@
     position: absolute;
     inset: 0 0 0 auto;
     width: 100vw;
-    background-color: #2b8e53;
+    background-color: $instructors-head-bg;
     z-index: -1;
 
     @include media ($tablet-large) {
@@ -48,7 +48,7 @@
   }
 
   @include media ($tablet) {
-    color: #101010;
+    color: $instructors-head-text-tablet;
   }
 }
 
@@ -76,6 +76,14 @@
     order: 2;
     margin-top: 40px;
     display: block;
+  }
+}
+
+.instructors__main-slider-wrapper {
+  @include media ($tablet-large) {
+    position: relative;
+    padding-bottom: 40px;
+    width: 100%;
   }
 }
 
@@ -116,7 +124,6 @@
   }
 }
 
-
 .instructors__button-more {
   display: none;
 
@@ -130,7 +137,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    color: #2B8E53;
+    color: $instructors-btn-more;
     @include font(16px, 21px, $basic-family, 600);
 
     &::after {
@@ -139,6 +146,14 @@
       width: 16px;
       height: 16px;
     }
+  }
+}
+
+.instructors__second-slider-wrapper {
+  position: relative;
+
+  @include media ($tablet-large) {
+    display: none;
   }
 }
 

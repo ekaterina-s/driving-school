@@ -1,0 +1,158 @@
+.faq {
+  @include media($tablet) {
+    margin-bottom: 80px;
+  }
+
+  @include media($mobile) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 411px;
+      z-index: -1;
+      background-color: $faq-bg;
+    }
+  }
+}
+
+.faq__head {
+  color: $faq-head;
+  padding: 70px 303px 70px 0;
+
+  @include media($mobile) {
+    padding: 80px 0 40px 0;
+  }
+}
+
+.faq__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  position: relative;
+
+  @include media ($tablet-pro) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.faq__left-top {
+  grid-column: 1/8;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 100vw;
+    z-index: -1;
+    background-color: $faq-bg;
+    border-radius: 0 10px 10px 0;
+
+    @include media ($mobile) {
+      display: none;
+    }
+  }
+}
+
+.faq__pic {
+  width: auto;
+  height: auto;
+  margin-left: -185px;
+  margin-bottom: 93px;
+
+  @include media ($tablet-pro) {
+    margin-left: auto;
+  }
+}
+
+.faq__br {
+  @include media ($tablet) {
+    display: none;
+  }
+}
+
+.faq__right-bottom {
+  grid-column: 8/-1;
+  z-index: 0;
+  display: flex;
+}
+
+.faq__list {
+  margin: 68px 0 0 -217px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include media ($tablet-pro) {
+    margin: 0;
+  }
+
+  @include media($mobile) {
+    gap: 20px;
+  }
+}
+
+.faq__item {
+  background-color: $faq-item-bg;
+  padding: 30px;
+  border-radius: 10px;
+
+  @include media ($mobile) {
+    padding: 20px;
+  }
+}
+
+.faq__button {
+  border: 0;
+  text-decoration: none;
+  @include font(20px, 26px, $basic-family, bold);
+  color: $faq-button-text;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  &::after {
+    content: '';
+    background: url(../img/faq-dropdown.svg);
+    width: 29px;
+    height: 14px;
+  }
+
+  @include media($mobile) {
+    @include font(20px, 21px, $basic-family, bold);
+  }
+}
+
+.faq__button._active::after {
+  content: '';
+  background: url(../img/faq-dropdown_active.svg);
+  width: 26px;
+  height: 25px;
+}
+
+.faq__dropdown-text {
+  display: none;
+
+  &._active {
+    display: block;
+  }
+}
+
+.faq__slider-nav {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+
+  @include media ($tablet-pro) {
+    display: none;
+  }
+}

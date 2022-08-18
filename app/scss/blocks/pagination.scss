@@ -8,6 +8,13 @@
 }
 
 .pagination__number {
+  color: $pagination-number;
+  @include font(20px, 26px, $basic-family, bold);
+
+  @include media ($tablet) {
+    @include font(16px, 21px, $basic-family, bold);
+  }
+
   &._active {
     color: $pagination-number-active;
   }

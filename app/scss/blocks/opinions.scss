@@ -1,15 +1,40 @@
 .opinions {
   padding-top: 60px;
-  margin-bottom: 150px;
-  background-color: #F2F2F2;
+  margin-bottom: 164px;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 335px;
+    background-color: $opinions-bg;
+    z-index: -1;
+
+    @include media ($tablet) {
+      background-color: transparent;
+    }
+  }
 
   @include media ($tablet) {
     background-color: transparent;
+    margin-bottom: 80px;
   }
 }
 
 .opinions__container {
   position: relative;
+
+  @include media ($tablet) {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .opinions__head {
@@ -18,16 +43,103 @@
 
   @include media ($tablet) {
     text-align: left;
+    margin-bottom: 39px;
+  }
+}
+
+.opinions__wrapper {
+  position: relative;
+}
+
+.opinions__list {
+  padding: 0 0 40px 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.opinions__item {
+  width: 410px;
+  flex-shrink: 0;
+
+  &--small {
+    height: 220px;
+  }
+
+  &--medium {
+    height: 260px;
+  }
+
+  &--large {
+    height: 300px;
+
+    @include media ($mobile) {
+      height: auto;
+    }
+  }
+
+  @include media ($mobile) {
+    display: none;
+    width: auto;
+
+    &._active {
+      display: block;
+    }
+  }
+}
+
+.opinions__link {
+  position: relative;
+  display: block;
+
+  &::after {
+    content: '';
+    background: url(../img/video-icon.svg) no-repeat 0 0;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 210px;
+    left: 320px;
+
+    @include media ($mobile) {
+      top: 132px;
+      left: 210px;
+    }
+  }
+}
+
+.opinions__pic {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+
+  @include media ($mobile) {
+    height: auto;
+    width: auto;
   }
 }
 
 .opinions__pagination {
+  position: absolute;
   display: flex;
   bottom: 0;
-  left: 210px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  padding: 10px;
 }
 
 .opinions__slider-nav {
+  display: flex;
   bottom: 0;
-  right: 0;
+  right: 100px;
+
+  @include media ($mobile) {
+    display: none;
+  }
 }

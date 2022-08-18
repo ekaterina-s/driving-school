@@ -1,8 +1,0 @@
-.section-text {
-  @include font(20px, 26px, $basic-family, bold);
-  color: $section-text;
-
-  @include media ($tablet) {
-    @include font(16px, 21px, $basic-family, bold);
-  }
-}

@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1659610440100">
+  <link rel="stylesheet" href="css/main.css?t=1660831041172">
   <svg style="display: none;">
     <symbol viewBox="0 0 32 32" id="instagram">
       <path
@@ -32,27 +32,30 @@
         d="M0.292892 7.29289C-0.0976295 7.68342 -0.0976295 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM49 7L1 7V9L49 9V7Z"
         fill="currentColor" />
     </symbol>
-
+    <!-- <symbol viewBox="0 0 14 16" id="video">
+      <path d="M14 8L0.5 15.7942L0.5 0.205771L14 8Z" fill="currentColor" />
+    </symbol> -->
   </svg>
 </head>
 
 <body class="body js-body">
+  <button class="test-button button button--md button--primary">PP</button>
   <picture>
     <!-- <source srcset="img/mobile-2.jpg" media="(min-width: 320px)"> -->
     <source srcset="img/Desktop.jpg" media="(min-width: 321px)">
-    <img hidden class="test" src="img/mobile.jpg" alt="">
+    <img class="test" src="img/mobile.jpg" alt="">
   </picture>
   <header class="header">
-    <div class="header__top-panel top-panel">
-      <div class="top-panel__container container">
-        <a href="#" class="top-panel__logo">
-          <img class="top-panel__logo-pic" src="img/logo.svg" alt="лого компании" width="60" height="61">
-          <span class="top-panel__name">Автошкола <br> «АДПО»</span>
+    <div class="header__top-panel">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <img class="header__logo-pic" src="img/logo.svg" alt="лого компании" width="60" height="61">
+          <span class="header__name">Автошкола <br> «АДПО»</span>
         </a>
         <button class="header__toggle js-burger" aria-label="переключатель меню, открыть меню" type="button">
           <span class="header__toggle-line"></span>
         </button>
-        <div class="top-panel__dropdown dropdown">
+        <div class="header__dropdown dropdown">
           <div class="dropdown__head">
             <button class="dropdown__button button" type="button">Выберите адрес
             </button>
@@ -68,7 +71,7 @@
           </div>
         </div>
         <div class="header__overlay js-overlay">
-          <div class="header__nav">
+          <div class="header__nav nav">
             <nav class="nav container ">
               <ul class="nav__list">
                 <li class="nav__item">
@@ -117,7 +120,7 @@
               </li>
             </ul>
           </div>
-          <div class="top-panel__contacts contacts">
+          <div class="header__contacts contacts">
             <a href="mailto:info@autoturs-sp" class="contacts__text contacts__text--email">info@autoturs-sp</a>
             <div class="contacts__phones">
               <a href="tel:+78129503218" class="contacts__text contacts__text--phone-first">(812) 950–32–18</a>
@@ -157,7 +160,7 @@
     </div>
     <div class="offer__bottom bottom">
       <div class="container bottom__container">
-        <div class="slider">
+        <div class="offer__slider slider">
           <div class="slider__wrapper">
             <div class="slider__slide slide">
               <picture>
@@ -194,30 +197,30 @@
       <h2 class="branches__head section-head">Наши филиалы</h2>
     </div>
     <div class="container branches__tab-container">
-
-      <div class="branches__tab tab">
-        <button class="tab__button button button--md button--secondary js-tab-button _active" type="button">Учебные
+      <div class="branches__tab">
+        <button class="branches__button button button--md button--secondary js-tab-button _active" type="button">Учебные
           классы</button>
-        <button class="tab__button button button--md button--secondary js-tab-button" type="button">Автодром</button>
+        <button class="branches__button button button--md button--secondary js-tab-button"
+          type="button">Автодром</button>
       </div>
 
-      <div class="branches__tabcontent tabcontent">
-        <ul class="tabcontent__list js-tabcontent-list _active">
-          <li class="tabcontent__item"><a class="section-text tabcontent__link _active" href="#">Пр. Культуры, 31–1</a>
+      <div class="branches__tabcontent">
+        <ul class="branches__list _active">
+          <li class="branches__item"><a class="branches__link _active" href="#">Пр. Культуры, 31–1</a>
           </li>
-          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Ушинского, 5–1</a></li>
-          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Пр. Солидарности, 11–1</a></li>
-          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Руднева, 22–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Ушинского, 5–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Пр. Солидарности, 11–1</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Руднева, 22–1</a></li>
         </ul>
-        <ul class="tabcontent__list js-tabcontent-list">
-          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Бабушкинского, д. 119</a>
+        <ul class="branches__list">
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Бабушкинского, д. 119</a>
           </li>
-          <li class="tabcontent__item"><a class="section-text tabcontent__link" href="#">Ул. Репищева, д. 14</a></li>
+          <li class="branches__item"><a class="branches__link" href="#">Ул. Репищева, д. 14</a></li>
         </ul>
-        <div class="tabcontent__pagination pagination">
-          <div class="section-text pagination__number _active">1</div>
-          <div class="section-text pagination__number pagination__number--slash">/</div>
-          <div class="section-text pagination__number">4</div>
+        <div class="branches__pagination pagination">
+          <div class="pagination__number _active">1</div>
+          <div class="pagination__number pagination__number--slash">/</div>
+          <div class="pagination__number">4</div>
         </div>
       </div>
     </div>
@@ -226,7 +229,7 @@
     <div class="instructors__container container">
       <h2 class="section-head instructors__head">Наши <br class="instructors__break"> инструкторы</h2>
       <div class="instructors__right">
-        <div class="main-slider-wrapper">
+        <div class="instructors__main-slider-wrapper">
           <ul class="instructors__main-slider main-slider">
             <li class="main-slider__item _active">
               <div class="main-slider__content">
@@ -272,12 +275,12 @@
             </li>
           </ul>
           <div class="pagination instructors__main-slider-pagination">
-            <div class="section-text pagination__number _active">1</div>
-            <div class="section-text pagination__number pagination__number--slash">/</div>
-            <div class="section-text pagination__number">4</div>
+            <div class="pagination__number _active">1</div>
+            <div class="pagination__number pagination__number--slash">/</div>
+            <div class="pagination__number">4</div>
           </div>
         </div>
-        <div class="second-slider-wrapper">
+        <div class="instructors__second-slider-wrapper">
           <ul class="instructors__second-slider second-slider">
             <li class="second-slider__item">
               <h3 class="second-slider__head"></h3>
@@ -299,9 +302,9 @@
             </li>
           </ul>
           <div class="pagination instructors__second-slider-pagination">
-            <div class="section-text pagination__number _active">1</div>
-            <div class="section-text pagination__number pagination__number--slash">/</div>
-            <div class="section-text pagination__number">4</div>
+            <div class="pagination__number _active">1</div>
+            <div class="pagination__number pagination__number--slash">/</div>
+            <div class="pagination__number">4</div>
           </div>
           <div class="slider-nav instructors__slider-nav">
             <button class="slider-nav__button slider-nav__button--left" type="button"><svg
@@ -326,59 +329,59 @@
   <section class="autopark">
     <div class="autopark__container container">
       <h2 class="section-head autopark__head">Автопарк</h2>
-      <div class="autopark-list-wrapper">
-        <ul class="autopark__list autopark-list">
-          <li class="autopark-list__item autopark-item">
-            <div class="inscription autopark-item__inscription">
-              <div class="inscription__model">Škoda Octavia</div>
-              <div class="inscription__released">Год выпуска: 2017</div>
+      <div class="autopark__list-wrapper">
+        <ul class="autopark__list">
+          <li class="autopark__item">
+            <div class="autopark__inscription">
+              <div class="autopark__model">Škoda Octavia</div>
+              <div class="autopark__released">Год выпуска: 2017</div>
             </div>
             <picture>
-              <source media="(min-width: 993px)" srcset="img/autopark-car_1.png">
-              <img class="autopark-item__pic" src="img/autopark-car_1_mobile.png" alt="машина автопарка" width="290"
+              <source media="(min-width: 641px)" srcset="img/autopark-car_1.png">
+              <img class="autopark__pic" src="img/autopark-car_1_mobile.png" alt="машина автопарка" width="290"
                 height="157">
             </picture>
           </li>
-          <li class="autopark-list__item autopark-item _active">
-            <div class="inscription autopark-item__inscription">
-              <div class="inscription__model">Škoda Octavia</div>
-              <div class="inscription__released">Год выпуска: 2017</div>
+          <li class="autopark__item _active">
+            <div class="autopark__inscription">
+              <div class="autopark__model">Škoda Octavia</div>
+              <div class="autopark__released"><span class="autopark__released autopark__released--">Год выпуска:</span>2017</div>
             </div>
             <picture>
-              <source media="(min-width: 993px)" srcset="img/autopark-car_2.png">
-              <img class="autopark-item__pic" src="img/autopark-car_2_mobile.png" alt="машина автопарка" width="290"
+              <source media="(min-width: 641px)" srcset="img/autopark-car_2.png">
+              <img class="autopark__pic" src="img/autopark-car_2_mobile.png" alt="машина автопарка" width="290"
                 height="157">
             </picture>
           </li>
-          <li class="autopark-list__item autopark-item">
-            <div class="inscription autopark-item__inscription">
-              <div class="inscription__model">Volkswagen Jetta</div>
-              <div class="inscription__released">Год выпуска: 2014</div>
+          <li class="autopark__item">
+            <div class="autopark__inscription">
+              <div class="autopark__model">Volkswagen Jetta</div>
+              <div class="autopark__released">Год выпуска: 2014</div>
             </div>
             <picture>
-              <source media="(min-width: 993px)" srcset="img/autopark-car_3.png">
-              <img class="autopark-item__pic" src="img/autopark-car_3_mobile.png" alt="машина автопарка" width="290"
+              <source media="(min-width: 641px)" srcset="img/autopark-car_3.png">
+              <img class="autopark__pic" src="img/autopark-car_3_mobile.png" alt="машина автопарка" width="290"
                 height="157">
             </picture>
           </li>
-          <li class="autopark-list__item autopark-item">
-            <div class="inscription autopark-item__inscription">
-              <div class="inscription__model">Renault Logan</div>
-              <div class="inscription__released">Год выпуска: 2009</div>
+          <li class="autopark__item">
+            <div class="autopark__inscription">
+              <div class="autopark__model">Renault Logan</div>
+              <div class="autopark__released">Год выпуска: 2009</div>
             </div>
             <picture>
-              <source media="(min-width: 993px)" srcset="img/autopark-car_4.png">
-              <img class="autopark-item__pic" src="img/autopark-car_4_mobile.png" alt="машина автопарка" width="290"
+              <source media="(min-width: 641px)" srcset="img/autopark-car_4.png">
+              <img class="autopark__pic" src="img/autopark-car_4_mobile.png" alt="машина автопарка" width="290"
                 height="157">
             </picture>
           </li>
         </ul>
         <div class="autopark__pagination pagination">
-          <div class="section-text pagination__number _active">1</div>
-          <div class="section-text pagination__number pagination__number--slash">/</div>
-          <div class="section-text pagination__number">4</div>
+          <div class="pagination__number _active">1</div>
+          <div class="pagination__number pagination__number--slash">/</div>
+          <div class="pagination__number">4</div>
         </div>
-        <div class="autopark-list-nav slider-nav">
+        <div class="autopark__list-nav slider-nav">
           <button class="slider-nav__button slider-nav__button--left" type="button"><svg
               class="slider-nav__icon slider-nav__icon--left">
               <use xlink:href="#left" />
@@ -391,38 +394,128 @@
       </div>
     </div>
   </section>
-  <!--
   <section class="opinions">
-    <div class="opinions__container container">
+    <div class="opinions__container">
       <h2 class="section-head opinions__head">Отзывы</h2>
-      <ul class="opinions__list opinions-list">
-        <li class="opinions-list__item"><img src="img/opinions-pic-1.jpg" alt="фото студента" width="410" height="220"></li>
-        <li class="opinions-list__item"><img src="img/opinions-pic-2.jpg" alt="фото студента" width="410" height="260"></li>
-        <li class="opinions-list__item _active"><img src="img/opinions-pic-3.jpg" alt="видео от студента" width="410" height="300">
-        </li>
-        <li class="opinions-list__item"><img src="img/opinions-pic-2.jpg" alt="фото студента" width="410" height="260"></li>
-        <li class="opinions-list__item"><img src="img/opinions-pic-4.jpg" alt="фото студента" width="410" height="220"></li>
-      </ul>
-      <div class="pagination opinions__pagination">
-        <div class="section-text pagination__number _active">1</div>
-        <div class="section-text pagination__number pagination__number--slash">/</div>
-        <div class="section-text pagination__number">10</div>
-      </div>
-      <div class="opinions__slider-nav slider-nav">
-        <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-            class="slider-nav__icon slider-nav__icon--left">
-            <use xlink:href="#left" />
-          </svg></button>
-        <button class="slider-nav__button slider-nav__button--right" type="button"><svg
-            class="slider-nav__icon slider-nav__icon--right">
-            <use xlink:href="#left" />
-          </svg></button>
+      <div class="opinions__wrapper">
+        <ul class="opinions__list">
+          <li class="opinions__item opinions__item--small"><img class="opinions__pic" src="img/opinions-pic-1.png"
+              alt="фото студента" width="410" height="220">
+          </li>
+          <li class="opinions__item opinions__item--medium"><img class="opinions__pic" src="img/opinions-pic-2.png"
+              alt="фото студента" width="410" height="260">
+          </li>
+          <li class="opinions__item _active opinions__item--large">
+            <a href="#" class="opinions__link">
+              <picture>
+                <source media="(min-width: 641px)" srcset="img/opinions-pic-3.png">
+                <img class="opinions__pic" src="img/opinions-pic-3_mobile.png" alt="видео от студента" width="290"
+                  height="212">
+              </picture>
+              <!-- <svg class="opinions__icon">
+              <use xlink:href="#video" />
+            </svg> -->
+            </a>
+          </li>
+          <li class="opinions__item opinions__item--medium"><img class="opinions__pic" src="img/opinions-pic-2.png"
+              alt="фото студента" width="410" height="260">
+          </li>
+          <li class="opinions__item opinions__item--small"><img class="opinions__pic" src="img/opinions-pic-4.png"
+              alt="фото студента" width="410" height="220">
+          </li>
+        </ul>
+        <div class="pagination opinions__pagination">
+          <div class="pagination__number _active">1</div>
+          <div class="pagination__number pagination__number--slash">/</div>
+          <div class="pagination__number">10</div>
+        </div>
+        <div class="slider-nav opinions__slider-nav">
+          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--left">
+              <use xlink:href="#left" />
+            </svg></button>
+          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--right">
+              <use xlink:href="#left" />
+            </svg></button>
+        </div>
       </div>
     </div>
-  </section> -->
-  <script src="js/main.js?t=1659610440100"></script>
+  </section>
+  <section class="faq">
+    <div class="container faq__container">
+      <!-- <div class="faq__container"> -->
+        <div class="faq__left-top">
+          <h2 class="faq__head section-head">Часто <br class="faq__br"> задаваемые <br class="faq__br"> вопросы</h2>
+          <picture>
+            <source media="(min-width: 700px)" srcset="img/faq_pic.png">
+            <img class="faq__pic" src="img/faq_pic_mobile.png" alt="изображение машины" width="290" height="147">
+          </picture>
+        </div>
+        <div class="faq__right-bottom">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <button class="faq__button"> Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены
+                в этом городе?</button>
+              <div class="faq__dropdown-text">По новому закону для автошколы и ГИБДД не имеет значения прописка,
+                обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами.
+                Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге
+                или Ленинградской области сроком не менее 6 месяцев.</div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__button">Какие документы нужны для поступления?</button>
+              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+                est ipsam facilis id quos cumque, laudantium saepe.</div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__button">На каких автомобилях проходит обучение?</button>
+              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+                est ipsam facilis id quos cumque, laudantium saepe.</div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__button">Можно ли заниматься теорией и практикой в разных филиалах?</button>
+              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+                est ipsam facilis id quos cumque, laudantium saepe.</div>
+            </li>
+            <li class="faq__item">
+              <button class="faq__button">С какого возраста я могу приступить к обучение и сдавать
+                экзамен в ГИБДД на получение водительского удостоверения?</button>
+              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+                est ipsam facilis id quos cumque, laudantium saepe.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-nav faq__slider-nav">
+          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--left">
+              <use xlink:href="#left" />
+            </svg></button>
+          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+              class="slider-nav__icon slider-nav__icon--right">
+              <use xlink:href="#left" />
+            </svg></button>
+        </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <script src="js/main.js?t=1660831041172"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
-
+  <script>
+    let img = document.querySelector('.test');
+    let testButton = document.querySelector('.test-button');
+    testButton.addEventListener('click', function () {
+      img.classList.toggle('active');
+    })
+  </script>
+  <style>
+    .test:not(.active) {
+      display: none;
+    }
+  </style>
 </body>
 
 </html>
