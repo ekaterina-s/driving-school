@@ -334,7 +334,8 @@
           <li class="autopark__item">
             <div class="autopark__inscription">
               <div class="autopark__model">Škoda Octavia</div>
-              <div class="autopark__released">Год выпуска: 2017</div>
+              <div class="autopark__released"><span class="autopark__released autopark__released--label">Год выпуска:
+                </span> 2017</div>
             </div>
             <picture>
               <source media="(min-width: 641px)" srcset="img/autopark-car_1.png">
@@ -345,7 +346,8 @@
           <li class="autopark__item _active">
             <div class="autopark__inscription">
               <div class="autopark__model">Škoda Octavia</div>
-              <div class="autopark__released"><span class="autopark__released autopark__released--">Год выпуска:</span>2017</div>
+              <div class="autopark__released"><span class="autopark__released autopark__released--label">Год выпуска:
+                </span>2017</div>
             </div>
             <picture>
               <source media="(min-width: 641px)" srcset="img/autopark-car_2.png">
@@ -356,7 +358,8 @@
           <li class="autopark__item">
             <div class="autopark__inscription">
               <div class="autopark__model">Volkswagen Jetta</div>
-              <div class="autopark__released">Год выпуска: 2014</div>
+              <div class="autopark__released"><span class="autopark__released autopark__released--label">Год выпуска:
+                </span> 2014</div>
             </div>
             <picture>
               <source media="(min-width: 641px)" srcset="img/autopark-car_3.png">
@@ -367,7 +370,8 @@
           <li class="autopark__item">
             <div class="autopark__inscription">
               <div class="autopark__model">Renault Logan</div>
-              <div class="autopark__released">Год выпуска: 2009</div>
+              <div class="autopark__released"><span class="autopark__released autopark__released--label">Год выпуска:
+                </span> 2009</div>
             </div>
             <picture>
               <source media="(min-width: 641px)" srcset="img/autopark-car_4.png">
@@ -445,61 +449,99 @@
   <section class="faq">
     <div class="container faq__container">
       <!-- <div class="faq__container"> -->
-        <div class="faq__left-top">
-          <h2 class="faq__head section-head">Часто <br class="faq__br"> задаваемые <br class="faq__br"> вопросы</h2>
-          <picture>
-            <source media="(min-width: 700px)" srcset="img/faq_pic.png">
-            <img class="faq__pic" src="img/faq_pic_mobile.png" alt="изображение машины" width="290" height="147">
-          </picture>
+      <div class="faq__left-top">
+        <h2 class="faq__head section-head">Часто <br class="faq__br"> задаваемые <br class="faq__br"> вопросы</h2>
+        <picture>
+          <source media="(min-width: 700px)" srcset="img/faq_pic.png">
+          <img class="faq__pic" src="img/faq_pic_mobile.png" alt="изображение машины" width="290" height="147">
+        </picture>
+      </div>
+      <div class="faq__right-bottom">
+        <ul class="faq__list">
+          <li class="faq__item">
+            <button class="faq__button"> Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены
+              в этом городе?</button>
+            <div class="faq__dropdown-text">По новому закону для автошколы и ГИБДД не имеет значения прописка,
+              обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами.
+              Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге
+              или Ленинградской области сроком не менее 6 месяцев.</div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__button">Какие документы нужны для поступления?</button>
+            <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+              iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+              est ipsam facilis id quos cumque, laudantium saepe.</div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__button">На каких автомобилях проходит обучение?</button>
+            <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+              iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+              est ipsam facilis id quos cumque, laudantium saepe.</div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__button">Можно ли заниматься теорией и практикой в разных филиалах?</button>
+            <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+              iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+              est ipsam facilis id quos cumque, laudantium saepe.</div>
+          </li>
+          <li class="faq__item">
+            <button class="faq__button">С какого возраста я могу приступить к обучение и сдавать
+              экзамен в ГИБДД на получение водительского удостоверения?</button>
+            <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
+              iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
+              est ipsam facilis id quos cumque, laudantium saepe.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-nav faq__slider-nav">
+        <button class="slider-nav__button slider-nav__button--left" type="button"><svg
+            class="slider-nav__icon slider-nav__icon--left">
+            <use xlink:href="#left" />
+          </svg></button>
+        <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+            class="slider-nav__icon slider-nav__icon--right">
+            <use xlink:href="#left" />
+          </svg></button>
+      </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <section class="location">
+    <div class="container">
+      <h1 class="location__head section-head">Как нас найти</h1>
+      <div class="location__map">
+        <div class="location__dropdown">
+          <div class="dropdown">
+            <div class="dropdown__head">
+              <button class="dropdown__button button" type="button">Калининский район
+              </button>
+            </div>
+            <div class="dropdown__body _active js-dropdown">
+              <ul class="dropdown__list">
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Невский район</a>
+                </li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Выборгский район</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">Приморский район</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="faq__right-bottom">
-          <ul class="faq__list">
-            <li class="faq__item">
-              <button class="faq__button"> Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены
-                в этом городе?</button>
-              <div class="faq__dropdown-text">По новому закону для автошколы и ГИБДД не имеет значения прописка,
-                обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами.
-                Чтобы обучаться и сдавать экзамены в ГИБДД, вам потребуется временная регистрация в Санкт-Петербурге
-                или Ленинградской области сроком не менее 6 месяцев.</div>
+        <div class="location__popup popup">
+          <h2 class="popup__head">Учебные классы</h2>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <div class="popup__address">Пр. Культуры, д. 31, к.1</div>
+              <div class="popup__schedule">С 12:30 до 19:00 по будням</div>
+              <button class="popup__button">План входа</button>
             </li>
-            <li class="faq__item">
-              <button class="faq__button">Какие документы нужны для поступления?</button>
-              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
-                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
-                est ipsam facilis id quos cumque, laudantium saepe.</div>
-            </li>
-            <li class="faq__item">
-              <button class="faq__button">На каких автомобилях проходит обучение?</button>
-              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
-                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
-                est ipsam facilis id quos cumque, laudantium saepe.</div>
-            </li>
-            <li class="faq__item">
-              <button class="faq__button">Можно ли заниматься теорией и практикой в разных филиалах?</button>
-              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
-                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
-                est ipsam facilis id quos cumque, laudantium saepe.</div>
-            </li>
-            <li class="faq__item">
-              <button class="faq__button">С какого возраста я могу приступить к обучение и сдавать
-                экзамен в ГИБДД на получение водительского удостоверения?</button>
-              <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
-                iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
-                est ipsam facilis id quos cumque, laudantium saepe.</div>
+            <li class="popup__item">
+              <h2 class="popup__address">Ул. Ушинского, д. 5, к.1</h2>
+              <div class="popup__schedule">С 12:30 до 19:00 по будням</div>
+              <button class="popup__button">План входа</button>
             </li>
           </ul>
         </div>
-        <div class="slider-nav faq__slider-nav">
-          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--left">
-              <use xlink:href="#left" />
-            </svg></button>
-          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--right">
-              <use xlink:href="#left" />
-            </svg></button>
-        </div>
-      <!-- </div> -->
+      </div>
     </div>
   </section>
   <script src="js/main.js"></script>

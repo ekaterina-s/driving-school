@@ -14,6 +14,10 @@
   height: 15px;
   transition: color 0.2s ease;
   color: $slider-icon;
+
+  &:hover {
+    color: #FF574D;
+  }
 }
 
 .slider-nav__icon--right {

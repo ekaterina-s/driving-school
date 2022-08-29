@@ -103,6 +103,10 @@
   }
 }
 
+.autopark__released--label {
+  @include font(16px, 22px, $basic-family, bold);
+}
+
 .autopark__pagination {
   @include media ($tablet-pro) {
     position: absolute;

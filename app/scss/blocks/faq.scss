@@ -1,4 +1,6 @@
 .faq {
+  margin-bottom: 150px;
+
   @include media($tablet) {
     margin-bottom: 80px;
   }
@@ -106,25 +108,41 @@
   padding: 30px;
   border-radius: 10px;
 
+  &._active {
+    background-color: $faq-item-bg-active;
+    box-shadow: 5px 10px 30px rgba($faq-item-shadow, 0.1);
+  }
+
   @include media ($mobile) {
     padding: 20px;
   }
 }
 
 .faq__button {
-  border: 0;
+  vertical-align: top;
+  padding: 0;
+  cursor: pointer;
   text-decoration: none;
+  text-align: center;
+  background-color: transparent;
+  border: 0;
   @include font(20px, 26px, $basic-family, bold);
   color: $faq-button-text;
   display: flex;
   justify-content: space-between;
   text-align: left;
+  width: 100%;
+
+  &._active {
+    margin-bottom: 15px;
+  }
 
   &::after {
     content: '';
-    background: url(../img/faq-dropdown.svg);
+    background: url(../img/faq-dropdown.svg) no-repeat;
     width: 29px;
     height: 14px;
+    flex-shrink: 0;
   }
 
   @include media($mobile) {
@@ -141,6 +159,8 @@
 
 .faq__dropdown-text {
   display: none;
+  @include font(16px, 21px, $basic-family, bold);
+  color: $faq-dropdown-text;
 
   &._active {
     display: block;
@@ -149,7 +169,7 @@
 
 .faq__slider-nav {
   position: absolute;
-  bottom: 0;
+  bottom: 17px;
   right: 25px;
 
   @include media ($tablet-pro) {

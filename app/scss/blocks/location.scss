@@ -1,0 +1,24 @@
+.location {
+  margin-bottom: 150px;
+}
+
+.location__head {
+  text-align: center;
+  margin-bottom: 112px;
+}
+
+.location__map {
+  background: url(../img/location-map.jpg) no-repeat 0 0;
+  position: relative;
+}
+
+.location__dropdown {
+  position: absolute;
+  top: -50px;
+}
+
+.location__popup {
+  position: absolute;
+  top: 42px;
+  right: 135px;
+}

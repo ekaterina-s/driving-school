@@ -15,8 +15,26 @@ dropdownButton.addEventListener('click', () => {
   dropdown.classList.toggle('_active');
 });
 
-const autoparkItemPic = document.querySelectorAll('.autopark-item__pic');
-const autoparkItemInscription = document.querySelectorAll('.autopark-item__inscription');
+const faqButton = document.querySelectorAll('.faq__button');
+const faqDropdownText = document.querySelectorAll('.faq__dropdown-text');
+const faqItem = document.querySelectorAll('.faq__item');
+
+for (let i = 0; i < faqButton.length; i++) {
+  faqButton[i].addEventListener('click', () => {
+    faqButton[i].classList.toggle('_active');
+    faqItem[i].classList.toggle('_active');
+    faqDropdownText[i].classList.toggle('_active');
+  })
+}
+
+faqButton.addEventListener('click', () => {
+  faqItem.classList.toggle('_active');
+  faqButton.classList.toggle('_active');
+  faqDropdownText.classList.toggle('_active');
+});
+
+// const autoparkItemPic = document.querySelectorAll('.autopark-item__pic');
+// const autoparkItemInscription = document.querySelectorAll('.autopark-item__inscription');
 
 // autoparkItemPic.forEach((index) => {
 //   autoparkItemPic[index].addEventListener('click', () => {

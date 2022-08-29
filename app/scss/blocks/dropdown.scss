@@ -1,11 +1,5 @@
 .dropdown {
-  margin-right: 42px;
   position: relative;
-
-  @include media ($tablet) {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
 
 .dropdown__head {
