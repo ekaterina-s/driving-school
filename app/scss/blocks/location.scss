@@ -1,24 +1,124 @@
 .location {
   margin-bottom: 150px;
+  position: relative;
+
+  &::after {
+    @media (max-width: 320px) {
+      content: '';
+      position: absolute;
+      top: 112px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 400px;
+      z-index: -1;
+      background: url(../img/location-map_mob.jpg) no-repeat 0 0;
+    }
+  }
 }
 
 .location__head {
   text-align: center;
   margin-bottom: 112px;
+
+  @include media($mobile) {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .location__map {
   background: url(../img/location-map.jpg) no-repeat 0 0;
   position: relative;
+  height: 400px;
+
+  @media (max-width: 320px) {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
 }
+
+// .location__select-wrapper {
+//   position: absolute;
+//   top: -50px;
+//   display: flex;
+//   gap: 10px;
+//   align-items: center;
+
+//   &::before {
+//     content: '';
+//     background: url(../img/location.svg) no-repeat 0 0;
+//     width: 14px;
+//     height: 20px;
+//   }
+
+//   &::after {
+//     content: '';
+//     background: url(../img/down.svg) no-repeat 0 0;
+//     width: 16px;
+//     height: 16px;
+//   }
+// }
+
+// .location__select {
+//   background-color: transparent;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   -o-appearance: none;
+//   border: none;
+//   @include font(16px, 19px, $basic-family);
+// }
+
+// select::-ms-expand {
+//   display: none;
+// }
+
+// .location__option {
+//   text-decoration: none;
+//   @include font(16px, 19px, $basic-family);
+//   color: $header-secondary-color;
+//   cursor: pointer;
+//   vertical-align: top;
+//   user-select: none;
+//   transition: color .2s ease;
+
+// &:before {
+//   content: attr(title);
+//   font-weight: bold;
+//   pointer-events: none;
+//   height: 0;
+//   overflow: hidden;
+//   visibility: hidden;
+//   display: block;
+// }
+
+//   @include hover {
+//     &:hover {
+//       color: $dropdown-link-hover;
+//       font-weight: bold;
+//     }
+//   }
+// }
 
 .location__dropdown {
   position: absolute;
   top: -50px;
+
+  @include media($mobile) {
+    top: -6px;
+  }
 }
 
 .location__popup {
   position: absolute;
   top: 42px;
   right: 135px;
+  display: none;
+
+  &._active {
+    display: block;
+  }
 }

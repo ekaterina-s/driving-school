@@ -10,7 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1661769870235">
+  <link rel="stylesheet" href="css/main.css?t=1663490979596">
   <svg style="display: none;">
     <symbol viewBox="0 0 32 32" id="instagram">
       <path
@@ -57,16 +57,22 @@
         </button>
         <div class="header__dropdown dropdown">
           <div class="dropdown__head">
-            <button class="dropdown__button button" type="button">Выберите адрес
+            <button class="dropdown__button dropdown__button--js-first button"
+              aria-label="кнопка включения выпадающего меню" type="button">Выберите адрес
             </button>
           </div>
           <div class="dropdown__body js-dropdown">
             <ul class="dropdown__list">
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Ушинского, 5-1</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Руднева, 22-1</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Бабушкина, 119</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Репищева, 14</a></li>
-              <li class="dropdown__item"><a class="dropdown__link" href="#">Ул. Солидарности, 11-1</a></li>
+              <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-first" href="#">Ул. Ушинского,
+                  5-1</a></li>
+              <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-first" href="#">Ул. Руднева,
+                  22-1</a></li>
+              <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-first" href="#">Ул. Бабушкина,
+                  119</a></li>
+              <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-first" href="#">Ул. Репищева,
+                  14</a></li>
+              <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-first" href="#">Ул. Солидарности,
+                  11-1</a></li>
             </ul>
           </div>
         </div>
@@ -145,7 +151,8 @@
             в группе выходного дня,
             по вечерам или онлайн
           </p>
-          <button class="offer__registration-button button button--md button--primary" type="button">Записаться</button>
+          <button class="offer__registration-button button button--md button--primary" aria-label="кнопка записаться"
+            type="button">Записаться</button>
         </div>
         <div class="top__right">
           <picture>
@@ -179,11 +186,12 @@
             </div>
           </div>
           <div class="slider-nav slider__nav">
-            <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-                class="slider-nav__icon slider-nav__icon--left">
+            <button class="slider-nav__button slider-nav__button--left" aria-label="кнопка-переключатель слайдера влево"
+              type="button"><svg class="slider-nav__icon slider-nav__icon--left">
                 <use xlink:href="#left" />
               </svg></button>
-            <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+            <button class="slider-nav__button slider-nav__button--right"
+              aria-label="кнопка-переключатель слайдера вправо" type="button"><svg
                 class="slider-nav__icon slider-nav__icon--right">
                 <use xlink:href="#left" />
               </svg></button>
@@ -198,10 +206,11 @@
     </div>
     <div class="container branches__tab-container">
       <div class="branches__tab">
-        <button class="branches__button button button--md button--secondary js-tab-button _active" type="button">Учебные
+        <button class="branches__button button button--md button--secondary js-tab-button _active"
+          aria-label="кнопка-переключатель таба" type="button">Учебные
           классы</button>
         <button class="branches__button button button--md button--secondary js-tab-button"
-          type="button">Автодром</button>
+          aria-label="кнопка-переключатель таба" type="button">Автодром</button>
       </div>
 
       <div class="branches__tabcontent">
@@ -307,11 +316,12 @@
             <div class="pagination__number">4</div>
           </div>
           <div class="slider-nav instructors__slider-nav">
-            <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-                class="slider-nav__icon slider-nav__icon--left">
+            <button class="slider-nav__button slider-nav__button--left" aria-label="кнопка-переключатель слайдера влево"
+              type="button"><svg class="slider-nav__icon slider-nav__icon--left">
                 <use xlink:href="#left" />
               </svg></button>
-            <button class="slider-nav__button slider-nav__button--right" type="button"><svg
+            <button class="slider-nav__button slider-nav__button--right"
+              aria-label="кнопка-переключатель слайдера влево" type="button"><svg
                 class="slider-nav__icon slider-nav__icon--right">
                 <use xlink:href="#left" />
               </svg></button>
@@ -323,7 +333,8 @@
         на обучение вождению автотранспортными средствами. <span class="instructors__more">Все инструкторы проходят
           повышение квалификации по программе
           «Преподаватель автомобильной школы по обучению практике управления автотранспортным средством»</span></p>
-      <button class="instructors__button-more" type="button">Читать больше</button>
+      <button class="instructors__button-more" aria-label="кнопка, открывающпя текст целиком" type="button">Читать
+        больше</button>
     </div>
   </section>
   <section class="autopark">
@@ -386,12 +397,12 @@
           <div class="pagination__number">4</div>
         </div>
         <div class="autopark__list-nav slider-nav">
-          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--left">
+          <button class="slider-nav__button slider-nav__button--left" aria-label="кнопка-переключатель слайдера влево"
+            type="button"><svg class="slider-nav__icon slider-nav__icon--left">
               <use xlink:href="#left" />
             </svg></button>
-          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--right">
+          <button class="slider-nav__button slider-nav__button--right" aria-label="кнопка-переключатель слайдера вправо"
+            type="button"><svg class="slider-nav__icon slider-nav__icon--right">
               <use xlink:href="#left" />
             </svg></button>
         </div>
@@ -434,12 +445,12 @@
           <div class="pagination__number">10</div>
         </div>
         <div class="slider-nav opinions__slider-nav">
-          <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--left">
+          <button class="slider-nav__button slider-nav__button--left" aria-label="кнопка-переключатель слайдера влево"
+            type="button"><svg class="slider-nav__icon slider-nav__icon--left">
               <use xlink:href="#left" />
             </svg></button>
-          <button class="slider-nav__button slider-nav__button--right" type="button"><svg
-              class="slider-nav__icon slider-nav__icon--right">
+          <button class="slider-nav__button slider-nav__button--right" aria-label="кнопка-переключатель слайдера вправо"
+            type="button"><svg class="slider-nav__icon slider-nav__icon--right">
               <use xlink:href="#left" />
             </svg></button>
         </div>
@@ -459,7 +470,8 @@
       <div class="faq__right-bottom">
         <ul class="faq__list">
           <li class="faq__item">
-            <button class="faq__button"> Если прописка не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены
+            <button class="faq__button" aria-label="кнопка включения выпадающего меню" type="button"> Если прописка
+              не в Санкт-Петербурге, могу ли я обучаться и сдавать экзамены
               в этом городе?</button>
             <div class="faq__dropdown-text">По новому закону для автошколы и ГИБДД не имеет значения прописка,
               обучаться и сдавать экзамены может любой россиянин. Немного другая ситуация с иностранными гражданами.
@@ -467,25 +479,29 @@
               или Ленинградской области сроком не менее 6 месяцев.</div>
           </li>
           <li class="faq__item">
-            <button class="faq__button">Какие документы нужны для поступления?</button>
+            <button class="faq__button" aria-label="кнопка включения выпадающего меню" type="button">Какие документы
+              нужны для поступления?</button>
             <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
               iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
               est ipsam facilis id quos cumque, laudantium saepe.</div>
           </li>
           <li class="faq__item">
-            <button class="faq__button">На каких автомобилях проходит обучение?</button>
+            <button class="faq__button" aria-label="кнопка включения выпадающего меню" type="button">На каких
+              автомобилях проходит обучение?</button>
             <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
               iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
               est ipsam facilis id quos cumque, laudantium saepe.</div>
           </li>
           <li class="faq__item">
-            <button class="faq__button">Можно ли заниматься теорией и практикой в разных филиалах?</button>
+            <button class="faq__button" aria-label="кнопка включения выпадающего меню" type="button">Можно ли заниматься
+              теорией и практикой в разных филиалах?</button>
             <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
               iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
               est ipsam facilis id quos cumque, laudantium saepe.</div>
           </li>
           <li class="faq__item">
-            <button class="faq__button">С какого возраста я могу приступить к обучение и сдавать
+            <button class="faq__button" aria-label="кнопка включения выпадающего меню" type="button">С какого возраста
+              я могу приступить к обучение и сдавать
               экзамен в ГИБДД на получение водительского удостоверения?</button>
             <div class="faq__dropdown-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quae
               iure. Aliquid nostrum, fugiat, quo possimus accusantium reiciendis ratione rerum consectetur explicabo
@@ -494,12 +510,12 @@
         </ul>
       </div>
       <div class="slider-nav faq__slider-nav">
-        <button class="slider-nav__button slider-nav__button--left" type="button"><svg
-            class="slider-nav__icon slider-nav__icon--left">
+        <button class="slider-nav__button slider-nav__button--left" aria-label="кнопка переключения слайдера влево"
+          type="button"><svg class="slider-nav__icon slider-nav__icon--left">
             <use xlink:href="#left" />
           </svg></button>
-        <button class="slider-nav__button slider-nav__button--right" type="button"><svg
-            class="slider-nav__icon slider-nav__icon--right">
+        <button class="slider-nav__button slider-nav__button--right" aria-label="кнопка переключения слайдера вправо"
+          type="button"><svg class="slider-nav__icon slider-nav__icon--right">
             <use xlink:href="#left" />
           </svg></button>
       </div>
@@ -510,18 +526,27 @@
     <div class="container">
       <h1 class="location__head section-head">Как нас найти</h1>
       <div class="location__map">
-        <div class="location__dropdown">
+        <div class="location__dropdown dropdown">
           <div class="dropdown">
             <div class="dropdown__head">
-              <button class="dropdown__button button" type="button">Калининский район
+              <button class="dropdown__button dropdown__button--js-second button"
+                aria-label="кнопка включения выпадающего меню" type="button">Калининский район
               </button>
             </div>
             <div class="dropdown__body _active js-dropdown">
               <ul class="dropdown__list">
-                <li class="dropdown__item"><a class="dropdown__link" href="#">Невский район</a>
+                <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-second" href="#">Калининский
+                    район</a>
                 </li>
-                <li class="dropdown__item"><a class="dropdown__link" href="#">Выборгский район</a></li>
-                <li class="dropdown__item"><a class="dropdown__link" href="#">Приморский район</a></li>
+                <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-second" href="#">Невский
+                    район</a>
+                </li>
+                <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-second" href="#">Выборгский
+                    район</a>
+                </li>
+                <li class="dropdown__item"><a class="dropdown__link dropdown__link--js-second" href="#">Приморский
+                    район</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -532,19 +557,98 @@
             <li class="popup__item">
               <div class="popup__address">Пр. Культуры, д. 31, к.1</div>
               <div class="popup__schedule">С 12:30 до 19:00 по будням</div>
-              <button class="popup__button">План входа</button>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
             </li>
             <li class="popup__item">
-              <h2 class="popup__address">Ул. Ушинского, д. 5, к.1</h2>
+              <div class="popup__address">Ул. Ушинского, д. 5, к.1</div>
               <div class="popup__schedule">С 12:30 до 19:00 по будням</div>
-              <button class="popup__button">План входа</button>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Невский -->
+        <div class="location__popup popup">
+          <h2 class="popup__head">Учебные классы</h2>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <div class="popup__address">Пр. Солидарности, д. 11, к.1</div>
+              <div class="popup__schedule">С 12:30 до 18:30 по будням</div>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
+            </li>
+          </ul>
+          <h2 class="popup__head">Автодром</h2>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <div class="popup__address">Ул. Бабушкинского, д. 119</div>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Приморский -->
+        <div class="location__popup popup">
+          <h2 class="popup__head">Автодром</h2>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <div class="popup__address">Ул. Репищева, д. 14</div>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
+            </li>
+          </ul>
+        </div>
+        <!-- Выборгский -->
+        <div class="location__popup popup">
+          <h2 class="popup__head">Учебные классы</h2>
+          <ul class="popup__list">
+            <li class="popup__item">
+              <div class="popup__address">Ул. Руднева, д. 22, к.1</div>
+              <div class="popup__schedule">С 12:30 до 18:30 по будням</div>
+              <button class="popup__button" aria-label="кнопка стрелка для показа адреса" type="button">План
+                входа</button>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <script src="js/main.js?t=1661769870235"></script>
+  <!-- <section class="callback">
+    <div class="container callback__container">
+      <div class="callback__left-top">
+        <h1 class="callback__head section-head">Свяжитесь с нами!</h1>
+        <picture>
+          <source media="(min-width: 641px)" srcset="img/callback-car.png">
+          <img class="callback__pic" src="img/callback-car_mobile.png" alt="изображение машины" width="971"
+            height="385">
+        </picture>
+      </div>
+      <div class="callback__right-bottom">
+        <h2 class="callback__form-head">Оставьте свои контактные данные</h2>
+        <form class="callback__form" method="get" action="#">
+          <fieldset class="callback__fieldset">
+            <legend class="visually-hidden"></legend>
+            <label class="callback__label">
+              <input class="callback__input callback__input--name" type="text" name="name" placeholder="Наталия">
+            </label>
+            <label class="callback__label">
+              <input class="callback__input callback__input--phone" type="text" name="telephone" placeholder="Телефон">
+            </label>
+          </fieldset>
+          <fieldset class="callback__fieldset">
+            <input class="visually-hidden callback__input callback__input--confidential" type="checkbox"
+              name="confidential" value="choice" id="confidential" checked="checked">
+            <label class="callback__label callback__label--confidential" for="confidential">
+              Я согласен <span class="callback__confidential-policy">с политикой конфиденциальности</span>
+            </label>
+            <button class="callback__button button button--md button--primary" type="submit">Отправить заявку</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section> -->
+  <script src="js/main.js?t=1663490979596"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
   <script>
     let img = document.querySelector('.test');

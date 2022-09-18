@@ -1,0 +1,109 @@
+.callback__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+  position: relative;
+}
+
+.callback__head {
+  color: #fff;
+}
+
+.callback__left-top {
+  grid-column: 1/11;
+  position: relative;
+  z-index: 0;
+  padding-top: 75px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 100vw;
+    z-index: -1;
+    background-color: #2b8e53;
+    border-radius: 0 10px 10px 0;
+    z-index: -1;
+  }
+}
+
+.callback__pic {
+  margin-left: -180px;
+  margin-top: 40px;
+}
+
+.callback__right-bottom {
+  padding: 70px;
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 0 0;
+  z-index: 0;
+  grid-column: 11/-1;
+  margin: 55px -70px 0 -220px;
+}
+
+.callback__form-head {
+  padding: 0;
+  margin: 0 0 40px 0;
+  @include font(30px, 39px, $basic-family, bold);
+  color: #101010;
+}
+
+.callback__fieldset {
+  border: 0;
+}
+
+.callback__label {}
+
+.callback__input {
+  border: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  width: 340px;
+}
+
+.callback__input--name {
+  border-bottom: 2px solid #2B8E53;
+  @include font(16px, 21px, $basic-family, 600);
+  color: #2B8E53;
+}
+
+.callback__input--phone {
+  border-bottom: 1px solid #989898;
+  @include font(15px, 20px, $basic-family);
+  color: #989898;
+}
+
+.callback__label--confidential {
+  // display: flex;
+  // gap: 10px;
+  display: block;
+  @include font(13px, 17px, $basic-family, 600);
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    // background: url(../../img/checkbox-unchecked.svg) no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -30px;
+    border: 1px solid #2B8E53;
+    background-color: #2B8E53;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background: url(../img/checkbox-checked.svg) no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    left: -25px;
+    top: 5px;
+  }
+}

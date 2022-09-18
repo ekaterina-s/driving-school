@@ -2,7 +2,7 @@
   margin-bottom: 150px;
 
   @include media($tablet) {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 
   @include media($mobile) {
@@ -39,7 +39,7 @@
   @include media ($tablet-pro) {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
   }
 }
 
@@ -146,7 +146,7 @@
   }
 
   @include media($mobile) {
-    @include font(20px, 21px, $basic-family, bold);
+    @include font(16px, 21px, $basic-family, bold);
   }
 }
 

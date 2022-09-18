@@ -61,6 +61,10 @@
   margin: 0;
 }
 
+.dropdown__item {
+  position: relative;
+}
+
 .dropdown__link {
   display: block;
   text-decoration: none;
@@ -87,5 +91,11 @@
       color: $dropdown-link-hover;
       font-weight: bold;
     }
+  }
+}
+
+.dropdown__link--js-second {
+  &._active {
+    display: none;
   }
 }

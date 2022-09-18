@@ -2,80 +2,47 @@ const burger = document.querySelector('.js-burger');
 const headerOverlay = document.querySelector('.js-overlay');
 const body = document.querySelector('.js-body');
 
-const dropdown = document.querySelector('.js-dropdown');
-const dropdownButton = document.querySelector('.dropdown__button');
-
 burger.addEventListener('click', () => {
   burger.classList.toggle('_active');
   headerOverlay.classList.toggle('_active');
   body.classList.toggle('lock');
 });
 
-dropdownButton.addEventListener('click', () => {
-  dropdown.classList.toggle('_active');
-});
+const dropdownButtons = document.querySelectorAll('.dropdown__button');
+const dropdowns = document.querySelectorAll('.js-dropdown');
 
-const faqButton = document.querySelectorAll('.faq__button');
-const faqDropdownText = document.querySelectorAll('.faq__dropdown-text');
-const faqItem = document.querySelectorAll('.faq__item');
-
-for (let i = 0; i < faqButton.length; i++) {
-  faqButton[i].addEventListener('click', () => {
-    faqButton[i].classList.toggle('_active');
-    faqItem[i].classList.toggle('_active');
-    faqDropdownText[i].classList.toggle('_active');
+for (let i = 0; i < dropdownButtons.length; i++) {
+  dropdownButtons[i].addEventListener('click', () => {
+    dropdowns[i].classList.toggle('_active');
   })
-}
+};
 
-faqButton.addEventListener('click', () => {
-  faqItem.classList.toggle('_active');
-  faqButton.classList.toggle('_active');
-  faqDropdownText.classList.toggle('_active');
-});
+const dropdownButtonSecond = document.querySelector('.dropdown__button--js-second');
+console.log(dropdownButtonSecond.textContent);
+const dropdownLinksSecond = document.querySelectorAll('.dropdown__link--js-second');
+console.log(dropdownLinksSecond);
+const popUps = document.querySelectorAll('.location__popup');
 
-// const autoparkItemPic = document.querySelectorAll('.autopark-item__pic');
-// const autoparkItemInscription = document.querySelectorAll('.autopark-item__inscription');
+for (let i = 0; i < dropdownLinksSecond.length; i++) {
+  dropdownLinksSecond[i].addEventListener('click', () => {
+    dropdownLinksSecond[i].classList.toggle('_active');
+    if (dropdownLinksSecond[i].classList.contains('_active')) {
+      // console.log(dropdownLinks[i].textContent);
+      // console.log(dropdownButtonSecond.textContent);
+      dropdownButtonSecond.textContent = dropdownLinksSecond[i].textContent;
+      popUps[i].classList.toggle('_active');
+    }
+  });
+};
 
-// autoparkItemPic.forEach((index) => {
-//   autoparkItemPic[index].addEventListener('click', () => {
-//     autoparkItemPic[index].classList.toggle('_active');
-//     autoparkItemPic[index].classList.toggle('_active');
-//   });
-// });
-// for (let i = 0; i < autoparkItemPic.length; i++) {
-//   autoparkItemPic[i].addEventListener('click', () => {
-//     autoparkItemPic[i].classList.toggle('_active');
-//     autoparkItemInscription[i].classList.toggle('_active');
-//   });
-// };
+const faqButtons = document.querySelectorAll('.faq__button');
+const faqDropdownTexts = document.querySelectorAll('.faq__dropdown-text');
+const faqItems = document.querySelectorAll('.faq__item');
 
-
-const tabButtons = document.querySelectorAll('.js-tab-button');
-const tabcontentLists = document.querySelectorAll('.js-tabcontent-list');
-const tabcontentLinks = document.querySelectorAll('.tabcontent__link');
-
-// tabButtons.forEach((item, index) => {
-//   tabButtons[index].addEventListener('click', () => {
-//     tabButtons[index].className = tabButtons[index].className.replace(' _active', '');
-//   });
-// });
-
-// tabButtons.forEach((item, index) => {
-//   tabButtons[index].addEventListener('click', () => {
-//     if(tabButtons[index].contains.classList('_active')) {
-//       tabButtons[index].remove.classList('_active');
-//     } else {
-//       tabButtons[index].classList.add('_active');
-//     };
-    // tabButtons[index].classList.toggle('_active');
-
-    // tabcontentLists.forEach((item, index) => {
-    //   tabcontentLists[index].classList.toggle('_active');
-    // });
-    // tabcontentLinks.forEach((item, index) => {
-    //   tabcontentLinks[index].addEventListener('click', () => {
-    //     tabcontentLinks[index].classList.toggle('_active');
-    //   })
-    // });
-//   })
-// });
+for (let i = 0; i < faqButtons.length; i++) {
+  faqButtons[i].addEventListener('click', () => {
+    faqButtons[i].classList.toggle('_active');
+    faqItems[i].classList.toggle('_active');
+    faqDropdownTexts[i].classList.toggle('_active');
+  })
+};
